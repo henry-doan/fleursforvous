@@ -1,5 +1,6 @@
 import { AuthConsumer } from "../../providers/AuthProvider";
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
+import { Link, animateScroll as scroll } from "react-scroll";
 
 const Navbar = ({user, handleLogout }) => {
   
@@ -17,7 +18,7 @@ const Navbar = ({user, handleLogout }) => {
       // links to show up when Not logged in
       return (
         <>
-          <Link to='/login'>
+          {/* <Link to='/login'>
             <li>
               Login
             </li>
@@ -26,6 +27,56 @@ const Navbar = ({user, handleLogout }) => {
             <li>
               Register
             </li>
+          </Link> */}
+          <Link
+            activeClass="active"
+            to="Header"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
+            Home
+          </Link>
+          <Link
+            to="Gallery"
+            spy={true}
+            smooth={true}
+            duration={500}
+          >
+            Gallery
+          </Link>
+          <Link
+            to="Testimonals"
+            spy={true}
+            smooth={true}
+            duration={500}
+          >
+            Testimonals
+          </Link>
+          <Link
+            to="Service"
+            spy={true}
+            smooth={true}
+            duration={500}
+          >
+            Service
+          </Link>
+          <Link
+            to="About"
+            spy={true}
+            smooth={true}
+            duration={500}
+          >
+            About
+          </Link>
+          <Link
+            to="Contact"
+            spy={true}
+            smooth={true}
+            duration={500}
+          >
+            Contact
           </Link>
         </>
       )
