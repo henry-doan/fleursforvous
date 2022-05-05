@@ -1,7 +1,7 @@
 import { MainContainer } from "../../../styles/shared";
 
 const Gallery = () => (
-  <MainContainer color='Grey' id="Gallery">
+  <MainContainer id="Gallery">
     Gallery
   </MainContainer>
 )

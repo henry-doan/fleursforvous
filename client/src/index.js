@@ -5,6 +5,7 @@ import './index.css';
 import { BrowserRouter } from 'react-router-dom';
 import AuthProvider from "./providers/AuthProvider";
 import { initMiddleware } from 'devise-axios';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 initMiddleware();
 

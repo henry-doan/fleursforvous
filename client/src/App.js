@@ -1,6 +1,6 @@
 import Home from './components/home/Home';
 import NoMatch from './components/shared/NoMatch';
-import Navbar from './components/shared/Navbar';
+import MainNavbar from './components/shared/MainNavbar';
 import Login from './components/auth/Login';
 import Register from './components/auth/Register';
 import { Routes, Route } from 'react-router-dom';
@@ -9,7 +9,7 @@ import ProtectedRoute from './components/auth/ProtectedRoute';
 
 const App = () => (
   <>
-    <Navbar />
+    <MainNavbar />
     <FetchUser>
       <>
         <Routes>

@@ -1,7 +1,7 @@
 import { MainContainer } from "../../../styles/shared";
 
 const Testimonals = () => (
-  <MainContainer color='Grey' id='Testimonals'>
+  <MainContainer color='Black' id='Testimonals'>
     Testimonals
   </MainContainer>
 )

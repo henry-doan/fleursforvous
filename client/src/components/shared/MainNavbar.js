@@ -1,9 +1,16 @@
 import { AuthConsumer } from "../../providers/AuthProvider";
 // import { Link } from 'react-router-dom';
 import { Link, animateScroll as scroll } from "react-scroll";
+import { Container, Navbar, Nav } from 'react-bootstrap';
+import Logo from '../../images/logoshort.jpg';
+import { MainNav, MainNavLink, NavImg } from "../../styles/shared";
 
-const Navbar = ({user, handleLogout }) => {
-  
+const MainNavbar = ({ user, handleLogout }) => {
+
+  const scrollToTop = () => {
+    scroll.scrollToTop(); 
+  };
+
   const rightNavItems = () => {
     // links to show up when logged in
     if (user) {
@@ -28,7 +35,7 @@ const Navbar = ({user, handleLogout }) => {
               Register
             </li>
           </Link> */}
-          <Link
+          <MainNavLink
             activeClass="active"
             to="Header"
             spy={true}
@@ -37,47 +44,48 @@ const Navbar = ({user, handleLogout }) => {
             duration={500}
           >
             Home
-          </Link>
-          <Link
+          </MainNavLink>
+          <MainNavLink
             to="Gallery"
             spy={true}
             smooth={true}
             duration={500}
           >
             Gallery
-          </Link>
-          <Link
+          </MainNavLink>
+          <MainNavLink
             to="Testimonals"
             spy={true}
             smooth={true}
             duration={500}
           >
             Testimonals
-          </Link>
-          <Link
-            to="Service"
+          </MainNavLink>
+          <NavImg thumbnail src={Logo} alt='logo' />
+          <MainNavLink
+            to="Services"
             spy={true}
             smooth={true}
             duration={500}
           >
-            Service
-          </Link>
-          <Link
+            Services
+          </MainNavLink>
+          <MainNavLink
             to="About"
             spy={true}
             smooth={true}
             duration={500}
           >
             About
-          </Link>
-          <Link
+          </MainNavLink>
+          <MainNavLink
             to="Contact"
             spy={true}
             smooth={true}
             duration={500}
           >
             Contact
-          </Link>
+          </MainNavLink>
         </>
       )
     }
@@ -85,24 +93,22 @@ const Navbar = ({user, handleLogout }) => {
   
   // links that show up regardless of login or out
   return (
-    <>
-      <nav>
-        <ul>
-          <Link to='/'>
-            <li>
-              Home
-            </li>
-          </Link>
+    <MainNav collapseOnSelect sticky="top" expand="lg">
+      <Container>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-center">
+          <Nav>
             { rightNavItems() }
-        </ul>
-      </nav>
-    </>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </MainNav>
   )
 }
 
 const ConnectedNavbar = (props) => (
   <AuthConsumer> 
-    { value => <Navbar { ...props } { ...value } /> }
+    { value => <MainNavbar { ...props } { ...value } /> }
   </AuthConsumer>
 )
  

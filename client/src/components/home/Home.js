@@ -2,7 +2,7 @@ import About from "./About/About";
 import Contact from "./Contact/Contact";
 import Gallery from "./Gallery/Gallery";
 import Header from "./Header/Header";
-import Service from "./Service/Service";
+import Services from "./Services/Services";
 import Testimonals from "./Testimonals/Testimonals";
 
 const Home = () => (
@@ -10,7 +10,7 @@ const Home = () => (
     <Header />
     <Gallery />
     <Testimonals />
-    <Service />
+    <Services />
     <About />
     <Contact />
   </>
