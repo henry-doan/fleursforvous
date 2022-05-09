@@ -1,97 +1,176 @@
-import { MainContainer } from "../../../styles/shared";
 import { useState } from 'react';
+import { MainContainer } from "../../../styles/shared";
+import { Button, Container, Form, FloatingLabel, Row, Col } from 'react-bootstrap';
 
 const Contact = () => {
-  const { contact, setContact } = useState({ fullName: '', occasion: '', phone: '', email: '', dateNeeded: '', timeNeeded: '', colors: '', specialRequirements: '', priceRange: '' })
+  const [contact, setContact] = useState({ fullName: '', occasion: '', phone: '', email: '', dateNeeded: '', timeNeeded: '', colors: '', specialRequirements: '', priceRange: '', flowers: '' })
   
   const handleSubmit = (e) => {
     e.preventDefault()
 
-    setContact({ fullName: '', occasion: '', phone: '', email: '', dateNeeded: '', timeNeeded: '', colors: '', specialRequirements: '', priceRange: '' })
+    setContact({ fullName: '', occasion: '', phone: '', email: '', dateNeeded: '', timeNeeded: '', colors: '', specialRequirements: '', priceRange: '', flowers: '' })
   }
 
   return (
     <MainContainer color='Black' id='Contact'>
-      <h1>Contact / Get a Estimate</h1>
-      <p>We offer full-service boquets for any event, large, medium or small or custom. We understand your needs and we will cater the flowers to satisfy the biggest criteria of them all.</p>
-      <p>Serviced in the Great Salt Lake Area</p>
-      <p>You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message here:</p>
-      <form onSubmit={handleSubmit}>
-        <label>Full Name:</label>
-        <input 
-          type='text'
-          name='fullName'
-          value={contact.fullName}
-          onChange={(e) => setContact({ ...contact, fullName: e.target.value })}
-          required 
-          placeholder="Full Name"
-        />
-        <label>Occasion:</label>
-        <input 
-          name='occasion'
-          value={contact.occasion}
-          onChange={(e) => setContact({ ...contact, occasion: e.target.value })}
-          required 
-          placeholder="Occasion"
-        />
-        <label>Phone:</label>
-        <input 
-          type='phone'
-          name='phone'
-          value={contact.phone}
-          onChange={(e) => setContact({ ...contact, phone: e.target.value })}
-          required 
-          placeholder="Phone"
-        />
-        <label>Email:</label>
-        <input 
-          type='email'
-          name='email'
-          value={contact.email}
-          onChange={(e) => setContact({ ...contact, email: e.target.value })}
-          placeholder="Email"
-        />
-        <label>Date Needed By:</label>
-        <input 
-          type='date'
-          name='dateNeeded'
-          value={contact.dateNeeded}
-          onChange={(e) => setContact({ ...contact, dateNeeded: e.target.value })}
-          required 
-        />
-        <label>Time Needed By:</label>
-        <input 
-          type='time'
-          name='timeNeeded'
-          value={contact.timeNeeded}
-          onChange={(e) => setContact({ ...contact, timeNeeded: e.target.value })}
-          required 
-        />
-        {/* multi select */}
-        <label>Colors:</label>
-        <input 
-          name='colors'
-          value={contact.colors}
-          onChange={(e) => setContact({ ...contact, colors: e.target.value })}
-          required 
-          placeholder="Colors"
-        />
-        {/* money, price */}
-        <label>Price Range:</label>
-        <input 
-          name='priceRange'
-          value={contact.priceRange}
-          onChange={(e) => setContact({ ...contact, priceRange: e.target.value })}
-          required 
-        />
-        <label>Any Special Requirements:</label>
-        <textarea 
-          name='specialRequirements'
-          value={contact.specialRequirements}
-          onChange={(e) => setContact({ ...contact, specialRequirements: e.target.value })}
-        ></textarea>
-        <button type='submit'>Submit</button>
-      </form>
+      <Container>
+        <h1>Inquiries</h1>
+        <p>We offer full-service bouquets for any event, large, medium or small or custom. We understand your needs and we will cater the flowers to satisfy the biggest criteria of them all.</p>
+        <p>Serving between Ogden to Lehi</p>
+        <p>You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message here:</p>
+        <Form onSubmit={handleSubmit}>
+          <FloatingLabel
+            label="Full Name"
+            className="mb-3"
+          >
+            <Form.Control 
+              type="text" 
+              name='fullName'
+              value={contact.fullName}
+              onChange={(e) => setContact({ ...contact, fullName: e.target.value })}
+              placeholder="Full Name" 
+              required
+            />
+          </FloatingLabel>
+          <Row className="g-2">
+            <Col md>
+              <FloatingLabel
+                label="Email"
+                className="mb-3"
+              >
+                <Form.Control 
+                  type="email" 
+                  name='email'
+                  value={contact.email}
+                  onChange={(e) => setContact({ ...contact, email: e.target.value })}
+                  placeholder="Email" 
+                  required
+                />
+              </FloatingLabel>
+            </Col>
+            <Col md>
+              <FloatingLabel
+                label="Phone"
+                className="mb-3"
+              >
+                <Form.Control 
+                  type="text" 
+                  name='phone'
+                  value={contact.phone}
+                  onChange={(e) => setContact({ ...contact, phone: e.target.value })}
+                  placeholder="Phone" 
+                  required
+                />
+              </FloatingLabel>
+            </Col>
+          </Row>
+          <FloatingLabel
+            label="What's The Occasion?"
+            className="mb-3"
+          >
+            <Form.Control 
+              type="text" 
+              name='occasion'
+              value={contact.occasion}
+              onChange={(e) => setContact({ ...contact, occasion: e.target.value })}
+              placeholder="What's The Occasion?"
+              required 
+            />
+          </FloatingLabel>
+          <Row className="g-2">
+            <Col md>
+              <FloatingLabel
+                label="Date Needed By:"
+                className="mb-3"
+              >
+                <Form.Control 
+                  type='date'
+                  name='dateNeeded'
+                  value={contact.dateNeeded}
+                  onChange={(e) => setContact({ ...contact, dateNeeded: e.target.value })}
+                  required 
+                  placeholder="Date Needed By:" 
+                />
+              </FloatingLabel>
+            </Col>
+            <Col md>
+              <FloatingLabel
+                label="Time Needed By:"
+                className="mb-3"
+              >
+                <Form.Control 
+                  type='time'
+                  name='timeNeeded'
+                  value={contact.timeNeeded}
+                  onChange={(e) => setContact({ ...contact, timeNeeded: e.target.value })}
+                  required 
+                  placeholder="Time Needed By:" 
+                />
+              </FloatingLabel>
+            </Col>
+          </Row>
+          <Row className="g-2">
+            <Col md>
+              <FloatingLabel
+                label="Flowers Colors"
+                className="mb-3"
+              >
+                <Form.Control 
+                  name='colors'
+                  value={contact.colors}
+                  onChange={(e) => setContact({ ...contact, colors: e.target.value })}
+                  placeholder="Flowers Colors"
+                />
+              </FloatingLabel>
+            </Col>
+            <Col md>
+              <FloatingLabel
+                label="Bouquet Size:"
+                className="mb-3"
+              >
+                <Form.Select 
+                  name='priceRange'
+                  value={contact.priceRange}
+                  onChange={(e) => setContact({ ...contact, priceRange: e.target.value })}
+                  placeholder="Bouquet Size:"
+                >
+                  <option value="small">Small - $20</option>
+                  <option value="medium">Medium - $40</option>
+                  <option value="large">Large - $80</option>
+                  <option value="x large">X Large - $120</option>
+                  <option value="custom">Custom - MP</option>
+                </Form.Select>
+              </FloatingLabel>
+            </Col>
+            <Col md>
+              <FloatingLabel
+                label="Flower Types:"
+                className="mb-3"
+              >
+                <Form.Control 
+                  name='flowers'
+                  value={contact.flowers}
+                  onChange={(e) => setContact({ ...contact, flowers: e.target.value })}
+                  placeholder="Flower Types:" 
+                />
+              </FloatingLabel>
+            </Col>
+          </Row>
+          <FloatingLabel label="Any Special Requirements">
+            <Form.Control
+              as="textarea"
+              placeholder="Any Special Requirements"
+              style={{ height: '100px' }}
+              name='specialRequirements'
+              value={contact.specialRequirements}
+              onChange={(e) => setContact({ ...contact, specialRequirements: e.target.value })}
+            />
+          </FloatingLabel>
+          <Button variant="primary" type="submit">
+            Submit
+          </Button>
+        </Form>
+      </Container>
     </MainContainer>
   )
 }
