@@ -17,7 +17,7 @@ const Contact = () => {
         <h1>Inquiries</h1>
         <p>We offer full-service bouquets for any event, large, medium or small or custom. We understand your needs and we will cater the flowers to satisfy the biggest criteria of them all.</p>
         <p>Serving between Ogden to Lehi</p>
-        <p>You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message here:</p>
+        <p>You can also contact us by phone 385-831-4941 or email fleursforvous@gmail.com, or you can send us a message here:</p>
         <Form onSubmit={handleSubmit}>
           <FloatingLabel
             label="Full Name"
