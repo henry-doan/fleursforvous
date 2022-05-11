@@ -5,7 +5,8 @@ import styled from 'styled-components';
 const whatColor = (color) => {
   switch(color){
     case 'Black':
-      return '#181818';
+      // return '#181818';
+      return '#e7cbcb';
     case 'Grey':
       return '#F6F6F6';
     case 'Gold':
