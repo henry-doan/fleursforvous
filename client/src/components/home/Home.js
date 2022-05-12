@@ -3,13 +3,13 @@ import Contact from "./Contact/Contact";
 import Gallery from "./Gallery/Gallery";
 import Header from "./Header/Header";
 import Services from "./Services/Services";
-import Testimonals from "./Testimonals/Testimonals";
+import Testimonials from "./Testimonials/Testimonials";
 
 const Home = () => (
   <>
     <Header />
     <Gallery />
-    <Testimonals />
+    <Testimonials />
     <Services />
     <About />
     <Contact />

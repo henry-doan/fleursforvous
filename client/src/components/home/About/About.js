@@ -2,7 +2,7 @@ import { Container } from "react-bootstrap";
 import { MainContainer } from "../../../styles/shared";
 
 const About = () => (
-  <MainContainer color='Grey' id='About'>
+  <MainContainer color='White' id='About'>
     <Container>
       <h1>About</h1>
       <p>
