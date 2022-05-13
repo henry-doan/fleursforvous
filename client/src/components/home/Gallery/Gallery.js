@@ -1,5 +1,5 @@
 import { MainContainer } from "../../../styles/shared";
-import '../../../styles/gallery.css';
+import '../../../styles/gall.css';
 import igPost1 from '../../../images/igPosts/igPost1.jpeg';
 import igPost2 from '../../../images/igPosts/igPost2.jpeg';
 import igPost3 from '../../../images/igPosts/igPost3.jpg';
@@ -11,7 +11,7 @@ import igPost8 from '../../../images/igPosts/igPost8.jpg';
 
 const Gallery = () => (
   <MainContainer style={{ height: '115vh' }} id="Gallery" color='Black'>
-    <div className="instagram-section wf-section">
+    <div className="instagram-section">
       <div className="image-grid-instagram absolute-6" style= {{ willChange: "transform", transform: "translate3d(8.33832%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", transformStyle: "preserve-3d" }}>
         <img src={igPost7} loading="lazy" sizes="(max-width: 767px) 100vw, (max-width: 991px) 230px, 30vw"  alt="igpost7" className="image" />
       </div>
