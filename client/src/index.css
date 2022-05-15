@@ -18,7 +18,7 @@ body {
   /* font-family: 'theseasons', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif; */
-  font-family: 'Dream-Avenue', 'Lovera', 'theseasons' !important;
+  font-family: 'Lovera', 'theseasons', 'Dream-Avenue', !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -26,4 +26,8 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.form-floating >.form-control, .form-floating >.form-select {
+  /* background: transparent; */
 }

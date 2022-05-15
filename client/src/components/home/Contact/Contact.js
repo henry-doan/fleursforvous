@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { MainContainer } from "../../../styles/shared";
 import { Button, Container, Form, FloatingLabel, Row, Col } from 'react-bootstrap';
+import { MainInput } from '../../../styles/contact';
 
 const Contact = () => {
   const [contact, setContact] = useState({ fullName: '', occasion: '', phone: '', email: '', dateNeeded: '', timeNeeded: '', colors: '', specialRequirements: '', priceRange: '', flowers: '' })
@@ -13,17 +14,14 @@ const Contact = () => {
 
   return (
     <MainContainer color='Black' id='Contact'>
-      <Container>
+      <Container style={{ color: 'white'}}>
         <h1>Inquiries</h1>
         <p>We offer full-service bouquets for any event, large, medium or small or custom. We understand your needs and we will cater the flowers to satisfy the biggest criteria of them all.</p>
         <p>Serving between Ogden to Lehi</p>
         <p>You can also contact us by phone 385-831-4941 or email fleursforvous@gmail.com, or you can send us a message here:</p>
         <Form onSubmit={handleSubmit}>
-          <FloatingLabel
-            label="Full Name"
-            className="mb-3"
-          >
-            <Form.Control 
+ 
+            <MainInput
               type="text" 
               name='fullName'
               value={contact.fullName}
@@ -31,14 +29,14 @@ const Contact = () => {
               placeholder="Full Name" 
               required
             />
-          </FloatingLabel>
+         
           <Row className="g-2">
             <Col md>
               <FloatingLabel
                 label="Email"
                 className="mb-3"
               >
-                <Form.Control 
+                <MainInput
                   type="email" 
                   name='email'
                   value={contact.email}
@@ -53,7 +51,7 @@ const Contact = () => {
                 label="Phone"
                 className="mb-3"
               >
-                <Form.Control 
+                <MainInput
                   type="text" 
                   name='phone'
                   value={contact.phone}
@@ -68,7 +66,7 @@ const Contact = () => {
             label="What's The Occasion?"
             className="mb-3"
           >
-            <Form.Control 
+            <MainInput
               type="text" 
               name='occasion'
               value={contact.occasion}
@@ -115,7 +113,7 @@ const Contact = () => {
                 label="Flowers Colors"
                 className="mb-3"
               >
-                <Form.Control 
+                <MainInput 
                   name='colors'
                   value={contact.colors}
                   onChange={(e) => setContact({ ...contact, colors: e.target.value })}
@@ -147,7 +145,7 @@ const Contact = () => {
                 label="Flower Types:"
                 className="mb-3"
               >
-                <Form.Control 
+                <MainInput
                   name='flowers'
                   value={contact.flowers}
                   onChange={(e) => setContact({ ...contact, flowers: e.target.value })}
