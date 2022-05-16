@@ -28,6 +28,12 @@ code {
     monospace;
 }
 
-.form-floating >.form-control, .form-floating >.form-select {
-  /* background: transparent; */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  z-index: 1;
+}
+
+input[type="time"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  z-index: 1;
 }

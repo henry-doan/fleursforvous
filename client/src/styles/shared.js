@@ -1,4 +1,4 @@
-import { Image, Navbar } from 'react-bootstrap';
+import { Button, Image, Navbar } from 'react-bootstrap';
 import { Link } from 'react-scroll';
 import styled from 'styled-components';
 
@@ -37,4 +37,23 @@ export const MainNavLink = styled(Link)`
   text-decoration: none;
   color: #565656;
   margin: 0 10px;
+`
+
+export const MainBtn = styled(Button)`
+  color: white !important;
+  border: 1px solid white;
+  margin-top: 3rem;
+  border-radius: 0;
+  background: transparent;
+  width: 7rem;
+
+  &:hover {
+    background: white;
+    color: #181818 !important;
+  }
+`
+
+export const MainBtnContainer = styled.div`
+  display: flex; 
+  justify-content: center;
 `
