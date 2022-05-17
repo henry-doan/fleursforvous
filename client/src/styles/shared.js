@@ -57,3 +57,39 @@ export const MainBtnContainer = styled.div`
   display: flex; 
   justify-content: center;
 `
+
+export const MainProfilePic = styled(Image)`
+  width: 100%;
+  height: auto;
+  opacity: 0.75;
+  border-radius: 4px;
+`
+
+export const TextSec = styled.div`
+  padding: 40px;
+`
+
+export const TextHeader = styled.h1`
+  text-align: center;
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+  font-weight: 400;
+  margin: 10px 0;
+  font-size: 32px;
+`
+
+export const TextSubHeader = styled.h5`
+  text-align: center;
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+  font-weight: 500;
+  margin: 10px 0;
+  font-size: 20px;
+`
+
+export const TextPara = styled.p`
+  font-size: 20px;
+  font-family: "Playfair Display";
+  opacity: 0.75;
+  padding: 0 60px;
+`
