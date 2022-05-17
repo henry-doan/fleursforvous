@@ -36,6 +36,14 @@ const Testimonials = () => {
             <h3>"I loved them and my mom loved them even more! The designs of the bouquets were super gorgeous and aesthetic, from the flowers chosen to the way they were arranged, with the ribbons and bouquet paper tying it all together."</h3>
             <p>- Mother's Day Bouquet</p>
           </div>
+          <div>
+            <h3>"They are so beautiful! I love it! Hope to get some flowers from here soon, I really love it!"</h3>
+            <p>- Just Because Bouquet</p>
+          </div>
+          <div>
+            <h3>"Words can't express how easy and affordable getting these gorgeous flowers were! Each bouquet was aesthetically pleasing which made me love them even more! My mom and sister were so happy when receiving them! Everything was very thought out from the flower, ribbon, arrangement, and overall appearance."</h3>
+            <p>- Mother's Day & Graduation Bouquets </p>
+          </div>
         </Slider>
       </Container>
     </MainContainer>

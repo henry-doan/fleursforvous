@@ -21,7 +21,7 @@ const Services = () => (
           Engagements
         </Col>
         <Col lg="2">
-          Dates
+          Weddings
         </Col>
       </Row>
       <br />
@@ -29,7 +29,10 @@ const Services = () => (
       <br />
       <Row className="justify-content-md-center">
         <Col lg="3">
-          Baby Showers
+          Just Because
+        </Col>
+        <Col lg="3">
+          Dates
         </Col>
         <Col lg="3">
           Holidays
@@ -37,14 +40,14 @@ const Services = () => (
         <Col lg="3">
           Parties
         </Col>
-        <Col lg="3">
-          Just Because
-        </Col>
       </Row>
       <br />
       <br />
       <br />
       <Row className="justify-content-md-center">
+        <Col lg="2">
+          Baby Showers
+        </Col>
         <Col lg="2">
           Get Well Soon
         </Col>

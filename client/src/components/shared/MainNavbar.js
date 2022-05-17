@@ -50,6 +50,7 @@ const MainNavbar = ({ user, handleLogout }) => {
             spy={true}
             smooth={true}
             duration={500}
+            offset={-40}
           >
             Gallery
           </MainNavLink>
@@ -58,6 +59,7 @@ const MainNavbar = ({ user, handleLogout }) => {
             spy={true}
             smooth={true}
             duration={500}
+            offset={-40}
           >
             Testimonals
           </MainNavLink>
@@ -67,6 +69,7 @@ const MainNavbar = ({ user, handleLogout }) => {
             spy={true}
             smooth={true}
             duration={500}
+            offset={-40}
           >
             Services
           </MainNavLink>
@@ -75,6 +78,7 @@ const MainNavbar = ({ user, handleLogout }) => {
             spy={true}
             smooth={true}
             duration={500}
+            offset={-20}
           >
             About
           </MainNavLink>
@@ -83,8 +87,9 @@ const MainNavbar = ({ user, handleLogout }) => {
             spy={true}
             smooth={true}
             duration={500}
+            offset={-40}
           >
-            Contact
+            Inquiries
           </MainNavLink>
         </>
       )

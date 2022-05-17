@@ -16,9 +16,8 @@ const Contact = () => {
     <MainContainer color='Black' id='Contact'>
       <Container style={{ color: 'white'}}>
         <h1>Inquiries</h1>
-        <p>We offer full-service bouquets for any event, large, medium or small or custom. We understand your needs and we will cater the flowers to satisfy the biggest criteria of them all.</p>
-        <p>Serving between Ogden to Lehi</p>
-        <p>You can also contact us by phone 385-831-4941 or email fleursforvous@gmail.com, or you can send us a message here:</p>
+        <p>Alicia would love to work with you! Please fill out all of the required information down below. You should receive a response back within 24 hours.</p>
+        <p>You can also contact us by phone 385-831-4941 or email fleursforvous@gmail.com</p>
         <Form onSubmit={handleSubmit}>
           <FloatingLabel
             label="Full Name"

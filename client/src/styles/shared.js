@@ -88,7 +88,7 @@ export const TextSubHeader = styled.h5`
 `
 
 export const TextPara = styled.p`
-  font-size: 20px;
+  font-size: 18px;
   font-family: "Playfair Display";
   opacity: 0.75;
   padding: 0 60px;
