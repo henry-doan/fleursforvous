@@ -1,4 +1,5 @@
-import { Form } from 'react-bootstrap';
+import { Form, Stack } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const MainInput = styled(Form.Control)`
@@ -92,4 +93,27 @@ export const MainSelect = styled.select`
   }
 
   // On Mobile view it is indented
+`
+
+export const DocLink = styled(Link)`
+  text-decoration: none;
+  margin: 0 5px;
+  color: black;
+
+  &:hover {
+    color: #a7896a;
+  }
+`
+
+export const SocialLink = styled.a`
+  color: black;
+
+  &:hover {
+    color: #a7896a;
+    font-size: 20px;
+  }
+`
+
+export const ContactStack = styled(Stack)`
+  justify-content: center;
 `

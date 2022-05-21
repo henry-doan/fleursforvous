@@ -16,9 +16,10 @@ const Testimonials = () => {
   };
 
   return (
-    <MainContainer color='White' id='Testimonals'>
-      <Container>
+    <MainContainer color='White' id='Testimonals' size='50vh' smsize='100vh'>
+      <Container style={{ padding: '50px 250px', textAlign: 'center'}}>
         <h1>Testimonials</h1>
+        <br />
         <Slider {...settings}>
           <div>
             <h3>"I loved it! I thought the bouquet was really pretty and affordable. You can tell it was made with care."</h3>

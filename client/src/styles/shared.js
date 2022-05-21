@@ -16,9 +16,14 @@ const whatColor = (color) => {
 }
 
 export const MainContainer = styled.div`
-  height: 100vh;
+  height: ${ props => props.size ? props.size : '100vh' };
   width: 100%;
   background: ${ props => whatColor(props.color) };
+  font-family: "Playfair Display";
+
+  @media (max-width: 768px) {
+    height: ${ props => props.smsize ? props.smsize : '120vh' };
+  }
 `
 
 export const NavImg = styled(Image)`
@@ -92,4 +97,23 @@ export const TextPara = styled.p`
   font-family: "Playfair Display";
   opacity: 0.75;
   padding: 0 60px;
+`
+
+export const MainFooter = styled.footer`
+  width: 100%;
+  position: relative;
+  border-top-width: 1px;
+  border-top-style: solid;
+  padding-top: 40px;
+  padding-bottom: 70px;
+  text-align: center;
+  color: #211f1f;
+`
+
+export const CopyRightSec = styled.div`
+  display: block;
+  margin: 22px 0 0;
+  text-align: center;
+  font-size: 12px;
+  line-height: 26px;
 `

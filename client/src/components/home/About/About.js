@@ -2,7 +2,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import { MainContainer, MainProfilePic, TextHeader, TextPara, TextSec, TextSubHeader } from "../../../styles/shared";
 
 const About = () => (
-  <MainContainer color='White' id='About'>
+  <MainContainer color='White' id='About' smsize='190vh'>
     <br />
     <br />
     <br />

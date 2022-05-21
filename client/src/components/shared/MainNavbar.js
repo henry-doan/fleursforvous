@@ -37,15 +37,6 @@ const MainNavbar = ({ user, handleLogout }) => {
           </Link> */}
           <MainNavLink
             activeClass="active"
-            to="Header"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-          >
-            Home
-          </MainNavLink>
-          <MainNavLink
             to="Gallery"
             spy={true}
             smooth={true}
@@ -63,7 +54,6 @@ const MainNavbar = ({ user, handleLogout }) => {
           >
             Testimonals
           </MainNavLink>
-          <NavImg thumbnail src={Logo} alt='logo' />
           <MainNavLink
             to="Services"
             spy={true}
@@ -72,6 +62,16 @@ const MainNavbar = ({ user, handleLogout }) => {
             offset={-40}
           >
             Services
+          </MainNavLink>
+          <MainNavLink
+            activeClass="active"
+            to="Header"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
+            <NavImg thumbnail src={Logo} alt='logo' />
           </MainNavLink>
           <MainNavLink
             to="About"
@@ -83,13 +83,22 @@ const MainNavbar = ({ user, handleLogout }) => {
             About
           </MainNavLink>
           <MainNavLink
-            to="Contact"
+            to="Inquiries"
             spy={true}
             smooth={true}
             duration={500}
             offset={-40}
           >
             Inquiries
+          </MainNavLink>
+          <MainNavLink
+            to="Contact"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
+            Contact
           </MainNavLink>
         </>
       )

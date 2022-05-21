@@ -2,12 +2,16 @@ import { MainContainer } from "../../../styles/shared";
 import { Container, Col, Row } from "react-bootstrap";
 
 const Services = () => (
-  <MainContainer id='Services' color='Grey'>
+  <MainContainer id='Services' color='Grey' size='50vh' smsize='100vh'>
     <Container className="text-center">
+      <br />
+      <br />
+      <br />
       <h1>
         Services
       </h1>
-      <Row className="justify-content-md-center">
+      <br />
+      <Row className="justify-content-md-center" style={{ fontSize: '25px' }}>
         <Col lg="2">
           Birthdays
         </Col>
@@ -27,24 +31,24 @@ const Services = () => (
       <br />
       <br />
       <br />
-      <Row className="justify-content-md-center">
-        <Col lg="3">
+      <Row className="justify-content-md-center" style={{ fontSize: '25px' }}>
+        <Col lg="2">
           Just Because
         </Col>
-        <Col lg="3">
+        <Col lg="2">
           Dates
         </Col>
-        <Col lg="3">
+        <Col lg="2">
           Holidays
         </Col>
-        <Col lg="3">
+        <Col lg="2">
           Parties
         </Col>
       </Row>
       <br />
       <br />
       <br />
-      <Row className="justify-content-md-center">
+      <Row className="justify-content-md-center" style={{ fontSize: '25px' }}>
         <Col lg="2">
           Baby Showers
         </Col>
