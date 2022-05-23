@@ -1,0 +1,27 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  fullName: MyString
+  email: MyString
+  phone: MyString
+  occasion: MyString
+  dateNeeded: MyString
+  timeNeeded: MyString
+  colors: MyString
+  priceRange: MyString
+  flowers: MyString
+  specialRequirements: MyText
+  complete: false
+
+two:
+  fullName: MyString
+  email: MyString
+  phone: MyString
+  occasion: MyString
+  dateNeeded: MyString
+  timeNeeded: MyString
+  colors: MyString
+  priceRange: MyString
+  flowers: MyString
+  specialRequirements: MyText
+  complete: false

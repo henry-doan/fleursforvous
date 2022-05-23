@@ -2,14 +2,15 @@ import { useState } from 'react';
 import { MainBtn, MainBtnContainer, MainContainer } from "../../../styles/shared";
 import { Container, Form, FloatingLabel, Row, Col } from 'react-bootstrap';
 import { MainInput, MainSelect, MainSelectLabel, MainTextarea, MainSelectLabelTxt } from '../../../styles/contact';
+import { SubmissionConsumer } from '../../../providers/SubmissionProvider';
 
-const Inquiries = () => {
-  const [contact, setContact] = useState({ fullName: '', occasion: '', phone: '', email: '', dateNeeded: '', timeNeeded: '', colors: '', specialRequirements: '', priceRange: '', flowers: '' })
+const Inquiries = ({ addSubmission }) => {
+  const [contact, setContact] = useState({ fullName: '', occasion: '', phone: '', email: '', dateNeeded: '', timeNeeded: '', colors: '', specialRequirements: '', priceRange: 'Small - $20', flowers: '', complete: false })
   
   const handleSubmit = (e) => {
     e.preventDefault()
-    // todo save to db and send somewhere
-    setContact({ fullName: '', occasion: '', phone: '', email: '', dateNeeded: '', timeNeeded: '', colors: '', specialRequirements: '', priceRange: '', flowers: '' })
+    addSubmission(contact)
+    setContact({ fullName: '', occasion: '', phone: '', email: '', dateNeeded: '', timeNeeded: '', colors: '', specialRequirements: '', priceRange: 'Small - $20', flowers: '', complete: false  })
   }
 
   return (
@@ -171,4 +172,10 @@ const Inquiries = () => {
   )
 }
 
-export default Inquiries;
+const ConnectedInquiries = (props) => (
+  <SubmissionConsumer>
+    { value => <Inquiries {...props} {...value} />}
+  </SubmissionConsumer>
+)
+
+export default ConnectedInquiries;
