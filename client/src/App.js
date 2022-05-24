@@ -6,6 +6,7 @@ import Register from './components/auth/Register';
 import { Routes, Route } from 'react-router-dom';
 import FetchUser from './components/auth/FetchUser';
 import ProtectedRoute from './components/auth/ProtectedRoute';
+import Policy from './components/policies/Policy';
 
 const App = () => (
   <>
@@ -18,7 +19,8 @@ const App = () => (
           
           </Route>
           <Route exact path="/login" element={<Login />} />
-          <Route exact path="/register" element={<Register />} />
+          <Route exact path="/policy" element={<Policy />} />
+          {/* <Route exact path="/register" element={<Register />} /> */}
           <Route component={NoMatch} />
         </Routes>
       </>

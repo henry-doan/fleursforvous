@@ -34,11 +34,11 @@ const Contact = () =>  (
         <CopyRightSec>
           <Row>
             <Col> 
-              <DocLink to='Policy'>
+              <DocLink to='/policy'>
                 Policy
               </DocLink>
               /
-              <DocLink to='Terms'>
+              <DocLink to='/terms'>
                 Terms
               </DocLink>
               FLEURS for VOUS © {(new Date().getFullYear())} / All Rights Reserved
