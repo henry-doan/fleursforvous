@@ -19,7 +19,7 @@ export const MainContainer = styled.div`
   height: ${ props => props.size ? props.size : '100vh' };
   width: 100%;
   background: ${ props => whatColor(props.color) };
-  // font-family: "Playfair Display";
+  
 
   @media (max-width: 1200px) {
     height: ${ props => props.lgsize ? props.lgsize : '105vh' };
@@ -132,6 +132,7 @@ export const MainFooter = styled.footer`
   padding-bottom: 70px;
   text-align: center;
   color: #211f1f;
+  font-family: "Playfair Display";
 `
 
 export const CopyRightSec = styled.div`

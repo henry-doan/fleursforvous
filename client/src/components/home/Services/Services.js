@@ -7,7 +7,7 @@ const Services = () => (
       <br />
       <br />
       <br />
-      <h1>
+      <h1 style={{ fontFamily: "Playfair Display"}}>
         Services
       </h1>
       <br />

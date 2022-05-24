@@ -4,6 +4,7 @@ import styled from 'styled-components';
 export const TestimonalsSec = styled(Container)`
   padding: 50px 0;
   text-align: center;
+  font-family: "Playfair Display";
 `
 
 export const SingleTestinmonal = styled.div`

@@ -15,7 +15,7 @@ const Inquiries = ({ addSubmission }) => {
 
   return (
     <MainContainer color='Black' id='Inquiries'>
-      <Container style={{ color: 'white'}}>
+      <Container style={{ color: 'white', fontFamily: "Playfair Display" }}>
         <br />
         <br />
         <br />
