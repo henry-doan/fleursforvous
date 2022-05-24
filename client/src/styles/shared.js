@@ -19,7 +19,15 @@ export const MainContainer = styled.div`
   height: ${ props => props.size ? props.size : '100vh' };
   width: 100%;
   background: ${ props => whatColor(props.color) };
-  font-family: "Playfair Display";
+  // font-family: "Playfair Display";
+
+  @media (max-width: 1200px) {
+    height: ${ props => props.lgsize ? props.lgsize : '105vh' };
+  }
+
+  @media (max-width: 1024px) {
+    height: ${ props => props.mdsize ? props.mdsize : '110vh' };
+  }
 
   @media (max-width: 768px) {
     height: ${ props => props.smsize ? props.smsize : '120vh' };
@@ -67,11 +75,27 @@ export const MainProfilePic = styled(Image)`
   width: 100%;
   height: auto;
   opacity: 0.75;
-  border-radius: 4px;
+  border-radius: 8px;
+
+  @media (max-width: 1200px) {
+    width: 50%;
+  }
+
+  @media (max-width: 1024px) {
+    width: 100%;
+  }
 `
 
 export const TextSec = styled.div`
-  padding: 40px;
+  padding: 60px;
+
+  @media (max-width: 1024px) {
+    padding: 20px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 40px;
+  }
 `
 
 export const TextHeader = styled.h1`

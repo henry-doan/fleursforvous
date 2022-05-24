@@ -16,6 +16,11 @@ const Inquiries = ({ addSubmission }) => {
   return (
     <MainContainer color='Black' id='Inquiries'>
       <Container style={{ color: 'white'}}>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
         <h1>Inquiries</h1>
         <p>Alicia would love to work with you! Please fill out all of the required information down below. You should receive a response back within 24 hours.</p>
         <Form onSubmit={handleSubmit}>

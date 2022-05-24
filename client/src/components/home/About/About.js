@@ -1,18 +1,19 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { MainContainer, MainProfilePic, TextHeader, TextPara, TextSec, TextSubHeader } from "../../../styles/shared";
+import Profile from '../../../images/Profile.jpg';
 
 const About = () => (
-  <MainContainer color='White' id='About' smsize='190vh'>
+  <MainContainer color='White' id='About' smsize='190vh' size='110vh' mdsize='190vh' lgsize='150vh'>
     <br />
     <br />
     <br />
     <br />
     <Container>
       <Row>
-        <Col sm={12} md={6}>
-          <MainProfilePic src='https://images.unsplash.com/photo-1516205651411-aef33a44f7c2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Zmxvd2VyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60' />
+        <Col lg={12} xl={6}>
+          <MainProfilePic fluid src={Profile} alt='profile' />
         </Col>
-        <Col sm={12} md={6}>
+        <Col lg={12} xl={6}>
           <TextSec>
             <TextHeader>About FLEURS for VOUS</TextHeader>
             <TextSubHeader>Established 2022</TextSubHeader>
