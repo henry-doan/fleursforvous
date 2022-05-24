@@ -5,4 +5,5 @@ Rails.application.routes.draw do
     resources :submissions
   end
   
+  get '*other', to: 'static#index'
 end
