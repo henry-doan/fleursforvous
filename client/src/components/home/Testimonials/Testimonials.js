@@ -16,8 +16,9 @@ const Testimonials = () => {
   };
 
   return (
-    <MainContainer color='Grey' id='Testimonals' size='50vh' smsize='180vh'>
+    <MainContainer color='Grey' id='Testimonals' size='75vh' smsize='180vh' xssize='110vh' >
       <TestimonalsSec>
+        <br />
         <h1>Testimonials</h1>
         <br />
         <Slider {...settings}>

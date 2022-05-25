@@ -2,7 +2,7 @@ import { MainContainer } from "../../../styles/shared";
 import { Container, Col, Row } from "react-bootstrap";
 
 const Services = () => (
-  <MainContainer id='Services' color='Black' size='50vh' smsize='100vh'>
+  <MainContainer id='Services' color='Black' size='50vh' smsize='100vh' xssize='90vh'>
     <Container className="text-center" style={{ color: 'white' }}>
       <br />
       <br />

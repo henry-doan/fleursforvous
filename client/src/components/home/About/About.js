@@ -3,7 +3,7 @@ import { MainContainer, MainProfilePic, TextHeader, TextPara, TextSec, TextSubHe
 import Profile from '../../../images/Profile.jpg';
 
 const About = () => (
-  <MainContainer color='White' id='About' smsize='220vh' size='120vh' mdsize='190vh' lgsize='150vh'>
+  <MainContainer color='White' id='About' smsize='220vh' size='120vh' mdsize='190vh' lgsize='150vh' xssize='220vh'>
     <br />
     <br />
     <br />

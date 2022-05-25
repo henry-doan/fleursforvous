@@ -32,6 +32,11 @@ export const MainContainer = styled.div`
   @media (max-width: 768px) {
     height: ${ props => props.smsize ? props.smsize : '120vh' };
   }
+
+  @media (max-width: 500px) {
+    height: ${ props => props.xssize ? props.xssize : '130vh' };
+  }
+
 `
 
 export const NavImg = styled(Image)`
@@ -146,4 +151,13 @@ export const CopyRightSec = styled.div`
   text-align: center;
   font-size: 12px;
   line-height: 26px;
+`
+
+export const HeaderImg = styled.img`
+  margin: 0 auto;
+  width: 50%;
+
+  @media (max-width: 1024px) {
+    width: 100%;
+  }
 `
