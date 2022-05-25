@@ -14,8 +14,8 @@ const Inquiries = ({ addSubmission }) => {
   }
 
   return (
-    <MainContainer color='Black' id='Inquiries'>
-      <Container style={{ color: 'white', fontFamily: "Playfair Display" }}>
+    <MainContainer color='Grey' id='Inquiries'>
+      <Container style={{ color: 'black', fontFamily: "Playfair Display" }}>
         <br />
         <br />
         <br />
@@ -130,17 +130,16 @@ const Inquiries = ({ addSubmission }) => {
             </Col>
             <Col md>
               <MainSelectLabel>
-                  <MainSelectLabelTxt>Bouquet Size:</MainSelectLabelTxt>
+                <MainSelectLabelTxt>Bouquet Size:</MainSelectLabelTxt>
                 <MainSelect
                   name='priceRange'
                   value={contact.priceRange}
                   onChange={(e) => setContact({ ...contact, priceRange: e.target.value })}
                   placeholder="Bouquet Size:"
                   >
-                  <option value="small">Small - $20</option>
-                  <option value="medium">Medium - $40</option>
-                  <option value="large">Large - $80</option>
-                  <option value="x large">X Large - $120</option>
+                  <option value="small">Small - $20 - $30</option>
+                  <option value="medium">Medium - $40 - $50</option>
+                  <option value="large">Large - $60</option>
                   <option value="custom">Custom - MP</option>
                 </MainSelect>
               </MainSelectLabel>

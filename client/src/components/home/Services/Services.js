@@ -2,16 +2,16 @@ import { MainContainer } from "../../../styles/shared";
 import { Container, Col, Row } from "react-bootstrap";
 
 const Services = () => (
-  <MainContainer id='Services' color='Grey' size='50vh' smsize='100vh'>
-    <Container className="text-center">
+  <MainContainer id='Services' color='Black' size='50vh' smsize='100vh'>
+    <Container className="text-center" style={{ color: 'white' }}>
       <br />
       <br />
       <br />
-      <h1 style={{ fontFamily: "Playfair Display"}}>
+      <h1 style={{ fontFamily: "Playfair Display" }}>
         Services
       </h1>
       <br />
-      <Row className="justify-content-md-center" style={{ fontSize: '25px' }}>
+      <Row className="justify-content-md-center" style={{ fontSize: '25px', fontFamily: "Playfair Display" }}>
         <Col lg="2">
           Birthdays
         </Col>
@@ -31,7 +31,7 @@ const Services = () => (
       <br />
       <br />
       <br />
-      <Row className="justify-content-md-center" style={{ fontSize: '25px' }}>
+      <Row className="justify-content-md-center" style={{ fontSize: '25px', fontFamily: "Playfair Display" }}>
         <Col lg="2">
           Just Because
         </Col>
@@ -48,7 +48,7 @@ const Services = () => (
       <br />
       <br />
       <br />
-      <Row className="justify-content-md-center" style={{ fontSize: '25px' }}>
+      <Row className="justify-content-md-center" style={{ fontSize: '25px', fontFamily: "Playfair Display"  }}>
         <Col lg="2">
           Baby Showers
         </Col>

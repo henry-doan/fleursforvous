@@ -18,7 +18,7 @@ body {
   /* font-family: 'theseasons', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif; */
-  font-family: 'Lovera', 'theseasons', 'Dream-Avenue', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Playfair Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
   'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
   sans-serif !important;
   -webkit-font-smoothing: antialiased;
@@ -31,11 +31,9 @@ code {
 }
 
 input[type="date"]::-webkit-calendar-picker-indicator {
-  filter: invert(1);
   z-index: 1;
 }
 
 input[type="time"]::-webkit-calendar-picker-indicator {
-  filter: invert(1);
   z-index: 1;
 }

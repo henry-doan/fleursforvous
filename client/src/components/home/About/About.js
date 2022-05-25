@@ -3,7 +3,7 @@ import { MainContainer, MainProfilePic, TextHeader, TextPara, TextSec, TextSubHe
 import Profile from '../../../images/Profile.jpg';
 
 const About = () => (
-  <MainContainer color='White' id='About' smsize='190vh' size='110vh' mdsize='190vh' lgsize='150vh'>
+  <MainContainer color='White' id='About' smsize='220vh' size='120vh' mdsize='190vh' lgsize='150vh'>
     <br />
     <br />
     <br />
@@ -11,6 +11,8 @@ const About = () => (
     <Container>
       <Row>
         <Col lg={12} xl={6}>
+          <br />
+          <br />
           <MainProfilePic fluid src={Profile} alt='profile' />
         </Col>
         <Col lg={12} xl={6}>

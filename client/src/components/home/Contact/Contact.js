@@ -1,11 +1,10 @@
 import { CopyRightSec, MainContainer, MainFooter } from "../../../styles/shared";
-import { Container, Row, Col, Stack } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import { Envelope, Instagram, Telephone, Tiktok, Twitter } from 'react-bootstrap-icons';
-import { Link } from "react-router-dom";
 import { ContactStack, DocLink, SocialLink } from "../../../styles/contact";
 
 const Contact = () =>  (
-  <MainContainer color='grey' id='Contact' size='20vh' smsize='20vh'>
+  <MainContainer color='Black' id='Contact' size='33vh' smsize='20vh'>
     <Container className="text-center">
       <MainFooter>
         <br />

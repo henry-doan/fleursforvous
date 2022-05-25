@@ -5,7 +5,7 @@ import styled from 'styled-components';
 const whatColor = (color) => {
   switch(color){
     case 'Black':
-      return '#181818';
+      return '#818181';
     case 'Grey':
       return '#F6F6F6';
     case 'Gold':
@@ -19,7 +19,7 @@ export const MainContainer = styled.div`
   height: ${ props => props.size ? props.size : '100vh' };
   width: 100%;
   background: ${ props => whatColor(props.color) };
-  
+  font-family: "Playfair Display";
 
   @media (max-width: 1200px) {
     height: ${ props => props.lgsize ? props.lgsize : '105vh' };
@@ -44,25 +44,32 @@ export const NavImg = styled(Image)`
 
 export const MainNav = styled(Navbar)`
   background: #F6F6F6;
+  font-family: "Playfair Display"
 `
 
 export const MainNavLink = styled(Link)`
   text-decoration: none;
   color: #565656;
   margin: 0 10px;
+
+  &:hover {
+    color: black;
+    font-weight: 800;
+    border-bottom 1px solid black;
+  }
 `
 
 export const MainBtn = styled(Button)`
-  color: white !important;
-  border: 1px solid white;
+  color: black !important;
+  border: 1px solid black;
   margin-top: 3rem;
   border-radius: 0;
   background: transparent;
   width: 7rem;
 
   &:hover {
-    background: white;
-    color: #181818 !important;
+    background: black;
+    color: white !important;
   }
 `
 
@@ -117,7 +124,7 @@ export const TextSubHeader = styled.h5`
 `
 
 export const TextPara = styled.p`
-  font-size: 18px;
+  font-size: 20px;
   font-family: "Playfair Display";
   opacity: 0.75;
   padding: 0 60px;
@@ -126,12 +133,10 @@ export const TextPara = styled.p`
 export const MainFooter = styled.footer`
   width: 100%;
   position: relative;
-  border-top-width: 1px;
-  border-top-style: solid;
   padding-top: 40px;
   padding-bottom: 70px;
   text-align: center;
-  color: #211f1f;
+  color: white;
   font-family: "Playfair Display";
 `
 

@@ -11,7 +11,6 @@ export const MainInput = styled(Form.Control)`
   background: transparent;
   background-color: transparent;
   border-radius: 0;
-  color: white;
 
   &:focus {
     outline: none;
@@ -20,12 +19,9 @@ export const MainInput = styled(Form.Control)`
     border-color: inherit;
     -webkit-box-shadow: none;
     box-shadow: none;
-    color: white;
   }
 
-  &::-webkit-calendar-picker-indicator {
-    color: white;
-  }
+  
 `
 
 export const MainTextarea = styled(Form.Control)`
@@ -78,7 +74,6 @@ export const MainSelect = styled.select`
   background: transparent;
   background-color: transparent;
   border-radius: 0;
-  color: white !important;
   cursor: pointer;
 
   &:focus {
@@ -88,7 +83,6 @@ export const MainSelect = styled.select`
     border-color: inherit;
     -webkit-box-shadow: none;
     box-shadow: none;
-    color: white !important;
     cursor: pointer;
   }
 
@@ -98,18 +92,18 @@ export const MainSelect = styled.select`
 export const DocLink = styled(Link)`
   text-decoration: none;
   margin: 0 5px;
-  color: black;
+  color: white;
 
   &:hover {
-    color: #a7896a;
+    color: black;
   }
 `
 
 export const SocialLink = styled.a`
-  color: black;
+  color: white;
 
   &:hover {
-    color: #a7896a;
+    color: black;
     font-size: 20px;
   }
 `

@@ -131,7 +131,7 @@
   text-align: right;
   text-align: center;
   text-decoration: none !important;
-  color: white !important;
+  color: black !important;
 }
 /* 
 .instagram-name {
@@ -349,6 +349,6 @@
   .instagram-name {
     font-size: 25px;
     text-decoration: none !important;
-    color: white !important;
+    color: black !important;
   }
 }

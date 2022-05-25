@@ -16,7 +16,7 @@ const Testimonials = () => {
   };
 
   return (
-    <MainContainer color='White' id='Testimonals' size='50vh' smsize='180vh'>
+    <MainContainer color='Grey' id='Testimonals' size='50vh' smsize='180vh'>
       <TestimonalsSec>
         <h1>Testimonials</h1>
         <br />

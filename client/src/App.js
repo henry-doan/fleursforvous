@@ -2,7 +2,7 @@ import Home from './components/home/Home';
 import NoMatch from './components/shared/NoMatch';
 import MainNavbar from './components/shared/MainNavbar';
 import Login from './components/auth/Login';
-import Register from './components/auth/Register';
+// import Register from './components/auth/Register';
 import { Routes, Route } from 'react-router-dom';
 import FetchUser from './components/auth/FetchUser';
 import ProtectedRoute from './components/auth/ProtectedRoute';
