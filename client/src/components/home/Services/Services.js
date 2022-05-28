@@ -1,8 +1,8 @@
-import { MainContainer } from "../../../styles/shared";
+import { MainBGContainer } from "../../../styles/shared";
 import { Container, Col, Row } from "react-bootstrap";
 
 const Services = () => (
-  <MainContainer id='Services' color='Black' size='50vh' smsize='100vh' xssize='90vh'>
+  <MainBGContainer id='Services' color='Black' smsize='900px' xssize='900px' image='https://images.unsplash.com/photo-1523693916903-027d144a2b7d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1035&q=80'>
     <Container className="text-center" style={{ color: 'white' }}>
       <br />
       <br />
@@ -66,7 +66,7 @@ const Services = () => (
         </Col>
       </Row>
     </Container>
-  </MainContainer>
+  </MainBGContainer>
 )
 
 export default Services;

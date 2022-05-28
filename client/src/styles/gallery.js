@@ -100,3 +100,149 @@ export const IGHandler = styled.a`
     font-size: 25px;
   }
 `
+
+export const GallItemSixth = styled(IGGridItem)`
+  position: absolute;
+  left: 10vw;
+  width: 29.6vw;
+  margin-top: 2.7vw;
+
+  @media screen and (min-width: 1440px) {
+  }
+
+  @media screen and (max-width: 991px) {
+    width: 230px;
+  }
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+`
+
+export const GallItemFirst = styled(IGGridItem)`
+  position: absolute;
+  top: auto;
+  right: 8.7vw;
+  width: 34vw;
+  margin-top: 1.3vw;
+
+  @media screen and (min-width: 1440px) {
+    
+  }
+
+  @media screen and (max-width: 991px) {
+    width: 250px;
+  }
+
+  @media screen and (max-width: 767px) {
+    // position: static;
+    // top: 22px;
+    display: none;
+  }
+`
+
+export const GallItemSecond = styled(IGGridItem)`
+  position: absolute;
+  top: auto;
+  right: 5vw;
+  width: 11.3vw;
+  margin-top: 8vw;
+
+  @media screen and (min-width: 1440px) {
+    
+  }
+
+  @media screen and (max-width: 991px) {
+    width: 100px;
+  }
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+`
+
+export const GallItemThird = styled(IGGridItem)`
+  position: absolute;
+  top: auto;
+  right: 5vw;
+  width: 15.7vw;
+  margin-top: 33vw;
+
+  @media screen and (min-width: 1440px) {
+    
+  }
+
+  @media screen and (max-width: 991px) {
+    width: 120px;
+  }
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+`
+
+export const GallItemFifth = styled(IGGridItem)`
+  position: absolute;
+  left: 3.4vw;
+  top: auto;
+  width: 12.5vw;
+  margin-top: 26vw;
+
+  @media screen and (min-width: 1440px) {
+    
+  }
+
+  @media screen and (max-width: 991px) {
+    width: 105px;
+  }
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+`
+
+export const GallItemSeventh = styled(IGGridItem)`
+  position: absolute;
+  left: 5vw;
+  width: 7.5vw;
+  margin-top: 11vw;
+
+  @media screen and (min-width: 1440px) {
+    
+  }
+
+  @media screen and (max-width: 991px) {
+    width: 70px;
+  }
+
+  @media screen and (max-width: 767px) {
+    position: static;
+    width: 80%;
+    // margin-top: 60px;
+    margin-top: 40px;
+  }
+`
+
+export const GallItemFourth = styled(IGGridItem)`
+  position: absolute;
+  left: 22.6vw;
+  top: auto;
+  right: auto;
+  width: 18.5vw;
+  margin-top: 32vw;
+
+  @media screen and (min-width: 1440px) {
+    
+  }
+
+  @media screen and (max-width: 991px) {
+    width: 150px;
+  }
+
+  @media screen and (max-width: 767px) {
+    position: static;
+    width: 80%;
+    // margin-top: 60px;
+    margin-top: 20px;
+  }
+`

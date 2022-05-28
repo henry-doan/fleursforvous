@@ -16,25 +16,54 @@ const whatColor = (color) => {
 }
 
 export const MainContainer = styled.div`
-  height: ${ props => props.size ? props.size : '100vh' };
+  height: ${ props => props.size ? props.size : '100%' };
   width: 100%;
   background: ${ props => whatColor(props.color) };
   font-family: "Playfair Display";
 
   @media (max-width: 1200px) {
-    height: ${ props => props.lgsize ? props.lgsize : '105vh' };
+    height: ${ props => props.lgsize ? props.lgsize : '105%' };
   }
 
   @media (max-width: 1024px) {
-    height: ${ props => props.mdsize ? props.mdsize : '110vh' };
+    height: ${ props => props.mdsize ? props.mdsize : '110%' };
   }
 
   @media (max-width: 768px) {
-    height: ${ props => props.smsize ? props.smsize : '120vh' };
+    height: ${ props => props.smsize ? props.smsize : '120%' };
   }
 
   @media (max-width: 500px) {
-    height: ${ props => props.xssize ? props.xssize : '130vh' };
+    height: ${ props => props.xssize ? props.xssize : '130%' };
+  }
+
+`
+
+export const MainBGContainer = styled.div`
+  height: ${ props => props.size ? props.size : '500px' };
+  width: 100%;
+  background:  ${ props => whatColor(props.color) };
+  font-family: "Playfair Display";
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${ props => props.image });
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (max-width: 1200px) {
+    height: ${ props => props.lgsize ? props.lgsize : '600px' };
+  }
+
+  @media (max-width: 1024px) {
+    height: ${ props => props.mdsize ? props.mdsize : '900px' };
+  }
+
+  @media (max-width: 768px) {
+    height: ${ props => props.smsize ? props.smsize : '950px' };
+    background-size: cover;
+  }
+
+  @media (max-width: 500px) {
+    height: ${ props => props.xssize ? props.xssize : '1000px' };
   }
 
 `
