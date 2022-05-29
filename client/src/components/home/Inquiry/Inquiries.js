@@ -14,15 +14,17 @@ const Inquiries = ({ addSubmission }) => {
   }
 
   return (
-    <MainContainer color='Grey' id='Inquiries'>
+    <MainContainer color='Grey' id='Inquiries' size='900px' mdsize='900px' lgsize='900px' smsize='1200px' xssize='1300px'>
       <Container style={{ color: 'black', fontFamily: "Playfair Display" }}>
         <br />
         <br />
         <br />
         <br />
         <br />
-        <h1>Inquiries</h1>
-        <p>Alicia would love to work with you! Please fill out all of the required information down below. You should receive a response back within 24 hours.</p>
+        <h1 style={{ fontSize: '2.5rem', fontFamily: "Playfair Display", textAlign: 'center' }}>Inquiries</h1>
+        <p style={{ fontSize: '1.50rem', fontFamily: "Playfair Display", textAlign: 'center' }}>
+          Alicia would love to work with you! Please fill out all of the required information down below. <br /> You should receive a response back within 24 hours.
+        </p>
         <Form onSubmit={handleSubmit}>
           <FloatingLabel
             label="Full Name"
@@ -85,7 +87,7 @@ const Inquiries = ({ addSubmission }) => {
           <Row className="g-2">
             <Col md>
               <FloatingLabel
-                label="Date Needed By:"
+                label="Date Needed By"
                 className="mb-3"
               >
                 <MainInput 
@@ -100,7 +102,7 @@ const Inquiries = ({ addSubmission }) => {
             </Col>
             <Col md>
               <FloatingLabel
-                label="Time Needed By:"
+                label="Time Needed By"
                 className="mb-3"
               >
                 <MainInput
@@ -130,23 +132,24 @@ const Inquiries = ({ addSubmission }) => {
             </Col>
             <Col md>
               <MainSelectLabel>
-                <MainSelectLabelTxt>Bouquet Size:</MainSelectLabelTxt>
+                <MainSelectLabelTxt>Bouquet Size</MainSelectLabelTxt>
                 <MainSelect
                   name='priceRange'
                   value={contact.priceRange}
                   onChange={(e) => setContact({ ...contact, priceRange: e.target.value })}
-                  placeholder="Bouquet Size:"
+                  placeholder="Bouquet Size"
                   >
-                  <option value="small">Small - $20 - $30</option>
-                  <option value="medium">Medium - $40 - $50</option>
-                  <option value="large">Large - $60</option>
+                  <option value="small">Small - $25 - $35</option>
+                  <option value="medium">Medium - $45 - $55</option>
+                  <option value="large">Large - $65 - $75</option>
+                  <option value="xlarge">XLarge - $85 - $95</option>
                   <option value="custom">Custom - MP</option>
                 </MainSelect>
               </MainSelectLabel>
             </Col>
             <Col md>
               <FloatingLabel
-                label="Flower Types:"
+                label="Flower Types"
                 className="mb-3"
               >
                 <MainInput

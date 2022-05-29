@@ -58,12 +58,12 @@ export const GallImg = styled.img`
 
 export const IGHandlerContainer = styled.div`
   margin-top: 5.4vw;
-  margin-right: 30vw;
+  margin-right: 25vw;
   margin-left: auto;
 
   @media screen and (min-width: 1440px) {
     margin-top: 5.4vw;
-    margin-right: 30vw;
+    margin-right: 25vw;
     margin-left: auto;
   }
 
@@ -91,7 +91,6 @@ export const IGHandler = styled.a`
   line-height: 1;
   font-style: italic;
   font-weight: 300;
-  text-align: right;
   text-align: center;
   text-decoration: none !important;
   color: black !important;
@@ -106,9 +105,6 @@ export const GallItemSixth = styled(IGGridItem)`
   left: 10vw;
   width: 29.6vw;
   margin-top: 2.7vw;
-
-  @media screen and (min-width: 1440px) {
-  }
 
   @media screen and (max-width: 991px) {
     width: 230px;
@@ -125,10 +121,6 @@ export const GallItemFirst = styled(IGGridItem)`
   right: 8.7vw;
   width: 34vw;
   margin-top: 1.3vw;
-
-  @media screen and (min-width: 1440px) {
-    
-  }
 
   @media screen and (max-width: 991px) {
     width: 250px;
@@ -148,10 +140,6 @@ export const GallItemSecond = styled(IGGridItem)`
   width: 11.3vw;
   margin-top: 8vw;
 
-  @media screen and (min-width: 1440px) {
-    
-  }
-
   @media screen and (max-width: 991px) {
     width: 100px;
   }
@@ -167,10 +155,6 @@ export const GallItemThird = styled(IGGridItem)`
   right: 5vw;
   width: 15.7vw;
   margin-top: 33vw;
-
-  @media screen and (min-width: 1440px) {
-    
-  }
 
   @media screen and (max-width: 991px) {
     width: 120px;
@@ -188,10 +172,6 @@ export const GallItemFifth = styled(IGGridItem)`
   width: 12.5vw;
   margin-top: 26vw;
 
-  @media screen and (min-width: 1440px) {
-    
-  }
-
   @media screen and (max-width: 991px) {
     width: 105px;
   }
@@ -207,10 +187,6 @@ export const GallItemSeventh = styled(IGGridItem)`
   width: 7.5vw;
   margin-top: 11vw;
 
-  @media screen and (min-width: 1440px) {
-    
-  }
-
   @media screen and (max-width: 991px) {
     width: 70px;
   }
@@ -218,7 +194,6 @@ export const GallItemSeventh = styled(IGGridItem)`
   @media screen and (max-width: 767px) {
     position: static;
     width: 80%;
-    // margin-top: 60px;
     margin-top: 40px;
   }
 `
@@ -231,10 +206,6 @@ export const GallItemFourth = styled(IGGridItem)`
   width: 18.5vw;
   margin-top: 32vw;
 
-  @media screen and (min-width: 1440px) {
-    
-  }
-
   @media screen and (max-width: 991px) {
     width: 150px;
   }
@@ -242,7 +213,6 @@ export const GallItemFourth = styled(IGGridItem)`
   @media screen and (max-width: 767px) {
     position: static;
     width: 80%;
-    // margin-top: 60px;
     margin-top: 20px;
   }
 `

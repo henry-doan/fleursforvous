@@ -11,6 +11,7 @@ export const MainInput = styled(Form.Control)`
   background: transparent;
   background-color: transparent;
   border-radius: 0;
+  font-size: 20px;
 
   &:focus {
     outline: none;
@@ -20,8 +21,6 @@ export const MainInput = styled(Form.Control)`
     -webkit-box-shadow: none;
     box-shadow: none;
   }
-
-  
 `
 
 export const MainTextarea = styled(Form.Control)`
@@ -36,6 +35,7 @@ export const MainTextarea = styled(Form.Control)`
   color: white;
   width: 100%;
   height: 100px;
+  font-size: 20px;
 
   &:focus {
     outline: none;

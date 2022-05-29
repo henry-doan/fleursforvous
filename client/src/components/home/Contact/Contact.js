@@ -4,7 +4,7 @@ import { Envelope, Instagram, Telephone, Tiktok, Twitter } from 'react-bootstrap
 import { ContactStack, DocLink, SocialLink } from "../../../styles/contact";
 
 const Contact = () =>  (
-  <MainContainer color='Black' id='Contact' size='33vh' smsize='20vh' xssize='35vh'>
+  <MainContainer color='Black' id='Contact' size='345px' smsize='360px' xssize='350px'>
     <Container className="text-center">
       <MainFooter>
         <br />

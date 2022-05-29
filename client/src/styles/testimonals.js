@@ -10,7 +10,7 @@ export const TestimonalsSec = styled(Container)`
 export const SingleTestinmonal = styled.div`
   padding: 0 250px;
 
-  @media (max-width: 768px) {
+  @media screen and (max-width: 991px) {
     padding: 10%;
   }
 `
