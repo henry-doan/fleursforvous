@@ -1,4 +1,4 @@
-import { Button, Image, Navbar } from 'react-bootstrap';
+import { Button, Container, Image, Navbar } from 'react-bootstrap';
 import { Link } from 'react-scroll';
 import styled from 'styled-components';
 
@@ -117,6 +117,12 @@ export const MainProfilePic = styled(Image)`
   height: auto;
   opacity: 0.75;
   border-radius: 8px;
+  margin-top: 45px;
+
+  @media (max-width: 1440px) {
+    width: 100%;
+    height: auto;
+  }
 
   @media (max-width: 1200px) {
     width: 50%;

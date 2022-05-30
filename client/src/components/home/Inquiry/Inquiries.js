@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { MainBtn, MainBtnContainer, MainContainer } from "../../../styles/shared";
 import { Container, Form, FloatingLabel, Row, Col } from 'react-bootstrap';
-import { MainInput, MainSelect, MainSelectLabel, MainTextarea, MainSelectLabelTxt } from '../../../styles/contact';
+import { MainInput, MainSelect, MainSelectLabel, MainTextarea, MainSelectLabelTxt, InquiryTitle } from '../../../styles/contact';
 import { SubmissionConsumer } from '../../../providers/SubmissionProvider';
 
 const Inquiries = ({ addSubmission }) => {
@@ -14,14 +14,9 @@ const Inquiries = ({ addSubmission }) => {
   }
 
   return (
-    <MainContainer color='Grey' id='Inquiries' size='900px' mdsize='900px' lgsize='900px' smsize='1200px' xssize='1300px'>
-      <Container style={{ color: 'black', fontFamily: "Playfair Display" }}>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <h1 style={{ fontSize: '2.5rem', fontFamily: "Playfair Display", textAlign: 'center' }}>Inquiries</h1>
+    <MainContainer color='Grey' id='Inquiries' size='900px' mdsize='900px' lgsize='900px' smsize='1300px' xssize='1300px'>
+      <Container style={{ color: 'black', fontFamily: "Playfair Display", paddingTop: '100px' }}>
+        <InquiryTitle>Inquiries</InquiryTitle>
         <p style={{ fontSize: '1.50rem', fontFamily: "Playfair Display", textAlign: 'center' }}>
           Alicia would love to work with you! Please fill out all of the required information down below. <br /> You should receive a response back within 24 hours.
         </p>

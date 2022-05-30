@@ -1,3 +1,4 @@
+import { Instagram } from 'react-bootstrap-icons';
 import styled from 'styled-components';
 
 export const InstagramSection = styled.div`
@@ -95,8 +96,24 @@ export const IGHandler = styled.a`
   text-decoration: none !important;
   color: black !important;
 
+  &:hover {
+    font-size: 2vw;
+    border-bottom: 1px solid black;
+  }
+
   @media screen and (max-width: 767px) {
     font-size: 25px;
+  }
+`
+
+export const IGHandlerIcon = styled.a`
+  line-height: 1;
+  font-weight: 300;
+  text-decoration: none !important;
+  color: black !important;
+
+  &:hover {
+    font-size: 2.75vw;
   }
 `
 

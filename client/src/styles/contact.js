@@ -32,10 +32,10 @@ export const MainTextarea = styled(Form.Control)`
   background: transparent;
   background-color: transparent;
   border-radius: 0;
-  color: white;
   width: 100%;
   height: 100px;
   font-size: 20px;
+  resize: none;
 
   &:focus {
     outline: none;
@@ -44,13 +44,16 @@ export const MainTextarea = styled(Form.Control)`
     border-color: inherit;
     -webkit-box-shadow: none;
     box-shadow: none;
-    color: white;
   }
 `
 
 export const MainSelectLabel = styled(Form.Label)`
   transform: scale(.85) translateY(-0.5rem) translateX(0.15rem);
   margin: 0;
+  
+  @media screen and (max-width: 767px) {
+    transform: none;
+  }
 `
 
 export const MainSelectLabelTxt = styled.span`
@@ -86,11 +89,12 @@ export const MainSelect = styled.select`
     cursor: pointer;
   }
 
-  // On Mobile view it is indented
+  @media screen and (max-width: 767px) {
+    width: 29rem;
+  }
 `
 
-export const DocLink = styled(Link)`
-  text-decoration: none;
+export const DocLink = styled.span`
   margin: 0 5px;
   color: white;
 
@@ -110,4 +114,10 @@ export const SocialLink = styled.a`
 
 export const ContactStack = styled(Stack)`
   justify-content: center;
+`
+
+export const InquiryTitle = styled.h1`
+  font-size: 2.5rem;
+  font-family: "Playfair Display";
+  text-align: center;
 `

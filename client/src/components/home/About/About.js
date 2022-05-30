@@ -1,19 +1,17 @@
 import { Container, Row, Col } from "react-bootstrap";
-import { MainContainer, MainProfilePic, TextHeader, TextPara, TextSec, TextSubHeader } from "../../../styles/shared";
+import { AboutContainer, MainContainer, MainProfilePic, TextHeader, TextPara, TextSec, TextSubHeader } from "../../../styles/shared";
 import Profile from '../../../images/Profile.jpg';
 
 const About = () => (
-  <MainContainer color='White' id='About' size='1150px' lgsize='1600px' mdsize='2150px' smsize='2100px' xssize='2100px'>
+  <MainContainer color='White' id='About' size='1200px' lgsize='1600px' mdsize='2150px' smsize='2100px' xssize='2100px'>
     <br />
     <br />
     <br />
     <br />
     <Container>
       <Row>
-        <Col lg={12} xl={6} style={{ display: 'flex', justifyContent: 'center' }}>
-          <br />
-          <br />
-          <MainProfilePic fluid src={Profile} alt='profile' />
+        <Col lg={12} xl={6} style={{ display: 'flex', justifyContent: 'center', padding: 0 }}>
+          <MainProfilePic src={Profile} alt='profile' />
         </Col>
         <Col lg={12} xl={6}>
           <TextSec>

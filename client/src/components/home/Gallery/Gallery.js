@@ -9,7 +9,7 @@ import igPost6 from '../../../images/igPosts/igPost6.jpg';
 import igPost7 from '../../../images/igPosts/igPost7.jpg';
 import igPost8 from '../../../images/igPosts/igPost8.jpg';
 import { Instagram } from "react-bootstrap-icons";
-import { GallImg, GallItemFifth, GallItemFirst, GallItemFourth, GallItemSecond, GallItemSeventh, GallItemSixth, GallItemThird, IGGridItem, IGHandler, IGHandlerContainer, IGText, InstagramSection } from "../../../styles/gallery";
+import { GallImg, GallItemFifth, GallItemFirst, GallItemFourth, GallItemSecond, GallItemSeventh, GallItemSixth, GallItemThird, IGGridItem, IGHandler, IGHandlerContainer, IGHandlerIcon, IGText, InstagramSection } from "../../../styles/gallery";
 
 const Gallery = () => (
   <>
@@ -41,7 +41,7 @@ const Gallery = () => (
         </GallItemFourth>
         <IGHandlerContainer>
           <IGText>
-            Follow Us On Instagram <Instagram />
+            Follow Us On Instagram <IGHandlerIcon href="https://www.instagram.com/fleursforvous/" target='_blank' rel='noreferrer'><Instagram /></IGHandlerIcon>
           </IGText>
           <p>
             <IGHandler href="https://www.instagram.com/fleursforvous/" target='_blank' rel='noreferrer'>
