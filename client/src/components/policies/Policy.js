@@ -41,7 +41,7 @@ const Policy = () => (
         WHAT ABOUT PAYMENT
       </h1>
       <p>
-      We use Venmo, Apple Pay, and Cash App as third party tools for payment of orders. We accept cash in physical form as our other option; however, a half deposit or full payment is required to place your order(s). All payment and credit card information is carried out via Venmo, Apple Pay, and Cash App, or through cash. We do not store or keep track of your credit card information. For all of your questions and concerns within those apps, you would contact the applications themselves. We only receive your payment(s) and verify whether or not your order(s) has been paid.
+        We use Venmo, Apple Pay, and Cash App as third party tools for payment of orders. We accept cash in physical form as our other option; however, a half deposit or full payment is required to place your order(s). All payment and credit card information is carried out via Venmo, Apple Pay, and Cash App, or through cash. We do not store or keep track of your credit card information. For all of your questions and concerns within those apps, you would contact the applications themselves. We only receive your payment(s) and verify whether or not your order(s) has been paid.
       </p>
     </Container>
   </>

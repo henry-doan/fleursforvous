@@ -25,7 +25,7 @@ const AuthProvider = ({ children }) => {
     axios.post("/api/auth/sign_in", user)
       .then( res => {
         setUser(res.data.data);
-        navigate("/");
+        navigate("/dash");
       })
       .catch( res => {
         console.log(res);
@@ -36,7 +36,7 @@ const AuthProvider = ({ children }) => {
     axios.delete("/api/auth/sign_out")
       .then( res => {
         setUser(null);
-        navigate('/login');
+        navigate('/');
       })
       .catch( res => {
         console.log(res);
