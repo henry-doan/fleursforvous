@@ -18,7 +18,7 @@ const Inquiries = ({ addSubmission }) => {
   }
 
   return (
-    <MainContainer color='Grey' id='Inquiries' size='950px' mdsize='950px' lgsize='950px' smsize='1350px' xssize='1350px'>
+    <MainContainer color='Grey' id='Inquiries' size='950px' mdsize='950px' lgsize='950px' smsize='1400px' xssize='1400px'>
       <Container style={{ color: 'black', fontFamily: "Playfair Display", paddingTop: '100px' }}>
         <InquiryTitle>Inquiries</InquiryTitle>
         <p style={{ fontSize: '1.50rem', fontFamily: "Playfair Display", textAlign: 'center' }}>
