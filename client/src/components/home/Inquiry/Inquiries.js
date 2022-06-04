@@ -1,12 +1,16 @@
 import { useState } from 'react';
-import { MainBtn, MainBtnContainer, MainContainer } from "../../../styles/shared";
-import { Container, Form, FloatingLabel, Row, Col } from 'react-bootstrap';
-import { MainInput, MainSelect, MainSelectLabel, MainTextarea, MainSelectLabelTxt, InquiryTitle } from '../../../styles/contact';
+import { CopyRightSec, MainBtn, MainBtnContainer, MainContainer } from "../../../styles/shared";
+import { Container, Form, FloatingLabel, Row, Col, Modal } from 'react-bootstrap';
+import { MainInput, MainSelect, MainSelectLabel, MainTextarea, MainSelectLabelTxt, InquiryTitle, DocLink } from '../../../styles/contact';
 import { SubmissionConsumer } from '../../../providers/SubmissionProvider';
+import Policy from '../../policies/Policy';
+import Terms from '../../policies/Terms';
 
 const Inquiries = ({ addSubmission }) => {
   const [contact, setContact] = useState({ fullName: '', occasion: '', phone: '', email: '', dateNeeded: '', timeNeeded: '', colors: '', specialRequirements: '', priceRange: 'Small - $20', flowers: '', complete: false })
-  
+  const [policyModalOpen, setPolicyModalOpen] = useState(false)
+  const [termsModalOpen, setTermsModalOpen] = useState(false)
+
   const handleSubmit = (e) => {
     e.preventDefault()
     addSubmission(contact)
@@ -14,7 +18,7 @@ const Inquiries = ({ addSubmission }) => {
   }
 
   return (
-    <MainContainer color='Grey' id='Inquiries' size='900px' mdsize='900px' lgsize='900px' smsize='1300px' xssize='1300px'>
+    <MainContainer color='Grey' id='Inquiries' size='950px' mdsize='950px' lgsize='950px' smsize='1350px' xssize='1350px'>
       <Container style={{ color: 'black', fontFamily: "Playfair Display", paddingTop: '100px' }}>
         <InquiryTitle>Inquiries</InquiryTitle>
         <p style={{ fontSize: '1.50rem', fontFamily: "Playfair Display", textAlign: 'center' }}>
@@ -163,6 +167,45 @@ const Inquiries = ({ addSubmission }) => {
             value={contact.specialRequirements}
             onChange={(e) => setContact({ ...contact, specialRequirements: e.target.value })}
           />
+          <p>
+          </p>
+          <CopyRightSec>
+            *By Clicking "Submit", you agree to FLEURS for VOUS's 
+            <DocLink onClick={() => setTermsModalOpen(true)} inverted>
+              Terms of Service
+            </DocLink>
+            <Modal 
+              show={termsModalOpen} 
+              onHide={() => setTermsModalOpen(false)}
+              size="lg"
+              centered
+            >
+              <Modal.Header closeButton>
+                Terms of Service 
+              </Modal.Header>
+              <Modal.Body>
+                <Terms />
+              </Modal.Body>
+            </Modal>
+            and acknowledge you have read the 
+            <DocLink onClick={() => setPolicyModalOpen(true)} inverted>
+              Private Policy.
+            </DocLink>
+            <Modal 
+              show={policyModalOpen} 
+              onHide={() => setPolicyModalOpen(false)}
+              size="lg"
+              centered
+            >
+              <Modal.Header closeButton>
+                Private Policy
+              </Modal.Header>
+              <Modal.Body>
+                <Policy />
+              </Modal.Body>
+            </Modal>
+            You also consent to receive calls, emails, or SMS messages you provided to finish up the order process and give you next steps for payment.
+          </CopyRightSec>
           <MainBtnContainer>
             <MainBtn className='text-center' type="submit">
               Submit

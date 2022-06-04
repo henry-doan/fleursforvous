@@ -96,10 +96,11 @@ export const MainSelect = styled.select`
 
 export const DocLink = styled.span`
   margin: 0 5px;
-  color: white;
+  color: ${ props => props.inverted ? '#818181' : 'white' };
 
   &:hover {
     color: black;
+    cursor: pointer;
   }
 `
 

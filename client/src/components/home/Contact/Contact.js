@@ -4,6 +4,7 @@ import { Container, Row, Col, Modal } from 'react-bootstrap';
 import { Envelope, Instagram, Telephone, Tiktok, Twitter } from 'react-bootstrap-icons';
 import { ContactStack, DocLink, SocialLink } from "../../../styles/contact";
 import Policy from '../../policies/Policy';
+import Terms from '../../policies/Terms';
 
 const Contact = () => {
   const [policyModalOpen, setPolicyModalOpen] = useState(false)
@@ -69,7 +70,7 @@ const Contact = () => {
                     Terms of Service 
                   </Modal.Header>
                   <Modal.Body>
-                    TBA
+                    <Terms />
                   </Modal.Body>
                 </Modal>
                 FLEURS for VOUS © {(new Date().getFullYear())} / All Rights Reserved

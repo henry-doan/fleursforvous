@@ -3,6 +3,7 @@ import { Container } from "react-bootstrap";
 const Policy = () => (
   <>
     <Container>
+      <p>Last updated: June 04, 2022</p>
       <h1>Who Are We</h1>
       <p>
         Our URL address is www.fleursforvous.com.
