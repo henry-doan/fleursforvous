@@ -10,10 +10,12 @@ const AllInquiries = ({ getAllSubmissions, submissions }) => {
 
   return (
     <>
-      <Table bordered hover>
+      <h1 className="text-center">All Orders</h1>
+      <Table bordered hover style={{ fontSize: '24px'}}>
         <thead>
           <tr>
             <th>#</th>
+            <th>Date Inquired</th>
             <th>Name</th>
             <th>Date Needed By</th>
             <th>Completed</th>

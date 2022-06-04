@@ -6,7 +6,6 @@ import Login from './components/auth/Login';
 import { Routes, Route } from 'react-router-dom';
 import FetchUser from './components/auth/FetchUser';
 import ProtectedRoute from './components/auth/ProtectedRoute';
-import Policy from './components/policies/Policy';
 import Dash from './components/auth/Dash';
 
 const App = () => (
@@ -20,7 +19,6 @@ const App = () => (
             <Route exact path="/dash" element={<Dash />} />
           </Route>
           <Route exact path="/login" element={<Login />} />
-          <Route exact path="/policy" element={<Policy />} />
           {/* <Route exact path="/register" element={<Register />} /> */}
           <Route component={NoMatch} />
         </Routes>
