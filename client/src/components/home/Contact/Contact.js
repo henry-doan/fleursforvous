@@ -40,7 +40,7 @@ const Contact = () => {
             <Row>
               <Col> 
                 <DocLink onClick={() => setPolicyModalOpen(true)}>
-                  Policy
+                  Private Policy
                 </DocLink>
                 <Modal 
                   show={policyModalOpen} 
@@ -57,7 +57,7 @@ const Contact = () => {
                 </Modal>
                 /
                 <DocLink onClick={() => setTermsModalOpen(true)}>
-                  Terms
+                  Terms of Service
                 </DocLink>
                 <Modal 
                   show={termsModalOpen} 

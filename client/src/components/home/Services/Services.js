@@ -2,7 +2,7 @@ import { MainBGContainer } from "../../../styles/shared";
 import { Container, Col, Row } from "react-bootstrap";
 
 const Services = () => (
-  <MainBGContainer id='Services' color='Black' smsize='900px' xssize='900px' image='https://images.unsplash.com/photo-1523693916903-027d144a2b7d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1035&q=80'>
+  <MainBGContainer id='Services' color='Black' smsize='900px' xssize='900px' image='https://images.unsplash.com/photo-1603843904225-ce7c6c8c6f31?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80'>
     <Container className="text-center" style={{ color: 'white' }}>
       <br />
       <br />

@@ -1,6 +1,6 @@
 import { MainContainer } from "../../../styles/shared";
 import '../../../styles/gall.css';
-import igPost1 from '../../../images/igPosts/igPost1.jpeg';
+import igPost1 from '../../../images/igPosts/igPost1.jpg';
 import igPost2 from '../../../images/igPosts/igPost2.jpeg';
 import igPost3 from '../../../images/igPosts/igPost3.jpg';
 import igPost4 from '../../../images/igPosts/igPost4.jpg';
@@ -16,13 +16,13 @@ const Gallery = () => (
     <MainContainer size='1150px' smsize='2200px' xssize='1500px' id="Gallery" color='White'>
       <InstagramSection>
         <GallItemSixth style={{ willChange: "transform", transform: "translate3d(8.33832%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", transformStyle: "preserve-3d" }}>
-          <GallImg src={igPost7} loading="lazy" sizes="(max-width: 767px) 100vw, (max-width: 991px) 230px, 30vw"  alt="igpost7" />
+          <GallImg src={igPost3} loading="lazy" sizes="(max-width: 767px) 100vw, (max-width: 991px) 230px, 30vw"  alt="igpost3" />
         </GallItemSixth>
         <IGGridItem>
           <GallImg src={igPost1} loading="lazy" alt="igpost1" className="image" />
         </IGGridItem>
         <GallItemFirst>
-          <GallImg src={igPost3} loading="lazy" alt="igpost3" className="image" />
+          <GallImg src={igPost7} loading="lazy" alt="igpost7" className="image" />
         </GallItemFirst>
         <GallItemSecond>
           <GallImg src={igPost5} loading="lazy" sizes="(max-width: 767px) 100vw, (max-width: 991px) 100px, 11vw" alt="igpost5" className="image" />
