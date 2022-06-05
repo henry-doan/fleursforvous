@@ -138,10 +138,10 @@ const Inquiries = ({ addSubmission }) => {
                   onChange={(e) => setContact({ ...contact, priceRange: e.target.value })}
                   placeholder="Bouquet Size"
                   >
-                  <option value="small">Small - $25 - $35</option>
-                  <option value="medium">Medium - $45 - $55</option>
-                  <option value="large">Large - $65 - $75</option>
-                  <option value="xlarge">XLarge - $85 - $95</option>
+                  <option value="small">Small - $30 - $40</option>
+                  <option value="medium">Medium - $50 - $60</option>
+                  <option value="large">Large - $70 - $80</option>
+                  <option value="xlarge">XLarge - $90 - $100</option>
                   <option value="custom">Custom - MP</option>
                 </MainSelect>
               </MainSelectLabel>

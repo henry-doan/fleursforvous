@@ -64,7 +64,7 @@ export const MainSelect = styled.select`
   height: calc(3.5rem + -10px);
   line-height: 1.25;
   display: block;
-  width: 20rem;
+  width: 30rem;
   padding: 0.375rem 2.25rem 0.375rem 0.75rem;
   -moz-padding-start: calc(0.75rem - 3px);
   font-size: 1.15rem;
@@ -90,7 +90,7 @@ export const MainSelect = styled.select`
   }
 
   @media screen and (max-width: 767px) {
-    width: 29rem;
+    width: 18rem;
   }
 `
 
