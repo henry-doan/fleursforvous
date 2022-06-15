@@ -1,4 +1,4 @@
-import { Button, Container, Image, Navbar } from 'react-bootstrap';
+import { Button, Image, Navbar } from 'react-bootstrap';
 import { Link } from 'react-scroll';
 import styled from 'styled-components';
 
@@ -151,7 +151,7 @@ export const TextHeader = styled.h1`
   letter-spacing: 5px;
   font-weight: 400;
   margin: 10px 0;
-  font-size: 32px;
+  font-size: 2.5rem;
 `
 
 export const TextSubHeader = styled.h5`

@@ -1,5 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
-import { AboutContainer, MainContainer, MainProfilePic, TextHeader, TextPara, TextSec, TextSubHeader } from "../../../styles/shared";
+import { MainContainer, MainProfilePic, TextHeader, TextPara, TextSec } from "../../../styles/shared";
 import Profile from '../../../images/Profile.jpg';
 
 const About = () => (
@@ -15,8 +15,7 @@ const About = () => (
         </Col>
         <Col lg={12} xl={6}>
           <TextSec>
-            <TextHeader>About FLEURS for VOUS</TextHeader>
-            <TextSubHeader>Established 2022</TextSubHeader>
+            <TextHeader>About</TextHeader>
           </TextSec>
           <TextPara>
             FLEURS for VOUS, or Flowers For You By Alicia, is a floral design business serving Weber County to Utah County, Utah. It is a French-English name combined together as one. Alicia wanted a name that had romance, love, and beauty, therefore, the French language and the enticing views of Paris, France, also known as one of the most romantic countries in the world, have made this all endlessly possible. 

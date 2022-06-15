@@ -2,6 +2,14 @@ import { MainContainer } from "../../../styles/shared";
 import { Instagram } from "react-bootstrap-icons";
 import { GallCol, GallHeader, GallRow, GalPic } from "../../../styles/gal";
 import { IGHandler, IGHandlerIcon } from "../../../styles/gallery";
+import igPost1 from '../../../images/igPosts/igPost1.jpg';
+import igPost2 from '../../../images/igPosts/igPost2.jpg';
+import igPost3 from '../../../images/igPosts/igPost3.jpg';
+import igPost4 from '../../../images/igPosts/igPost4.jpg';
+import igPost5 from '../../../images/igPosts/igPost5.jpg';
+import igPost6 from '../../../images/igPosts/igPost6.jpg';
+import igPost7 from '../../../images/igPosts/igPost7.jpg';
+import igPost8 from '../../../images/igPosts/igPost8.jpg';
 
 const Gallery = () => (
   <>
@@ -21,48 +29,48 @@ const Gallery = () => (
           <GalPic 
             loading="lazy" 
             alt="igpost"
-            src='https://images.unsplash.com/photo-1622658641558-235f26dd270b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80'
+            src={igPost3}
           />
           <GalPic 
             loading="lazy" 
             alt="igpost"
-            src='https://images.unsplash.com/photo-1462275646964-a0e3386b89fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2456&q=80'
-          />
-        </GallCol>
-        <GallCol>
-          <GalPic 
-            loading="lazy" 
-            alt="igpost"
-            src='https://images.unsplash.com/photo-1619962992057-be492a5816f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80'
-          />
-          <GalPic 
-            loading="lazy" 
-            alt="igpost"
-            src='https://images.unsplash.com/photo-1582794543139-8ac9cb0f7b11?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=927&q=80'
+            src={igPost1}
           />
         </GallCol>
         <GallCol>
           <GalPic 
             loading="lazy" 
             alt="igpost"
-            src='https://images.unsplash.com/photo-1508610048659-a06b669e3321?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1035&q=80'
+            src={igPost2}
           />
           <GalPic 
             loading="lazy" 
             alt="igpost"
-            src='https://images.unsplash.com/photo-1455659817273-f96807779a8a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80'
+            src={igPost7}
           />
         </GallCol>
         <GallCol>
           <GalPic 
             loading="lazy" 
             alt="igpost"
-            src='https://images.unsplash.com/photo-1622658641558-1bf6a846adeb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80'
+            src={igPost5}
           />
           <GalPic 
             loading="lazy" 
             alt="igpost"
-            src='https://images.unsplash.com/photo-1615280825886-fa817c0a06cc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzZ8fGZsb3dlcnN8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60'
+            src={igPost6}
+          />
+        </GallCol>
+        <GallCol>
+          <GalPic 
+            loading="lazy" 
+            alt="igpost"
+            src={igPost4}
+          />
+          <GalPic 
+            loading="lazy" 
+            alt="igpost"
+            src={igPost8}
           />
         </GallCol>
       </GallRow>

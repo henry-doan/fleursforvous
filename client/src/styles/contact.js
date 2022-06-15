@@ -1,5 +1,4 @@
 import { Form, Stack } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const MainInput = styled(Form.Control)`
@@ -90,7 +89,7 @@ export const MainSelect = styled.select`
   }
 
   @media screen and (max-width: 767px) {
-    width: 18rem;
+    width: 15rem;
   }
 `
 
