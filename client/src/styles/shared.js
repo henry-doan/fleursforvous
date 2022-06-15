@@ -148,7 +148,6 @@ export const TextSec = styled.div`
 export const TextHeader = styled.h1`
   text-align: center;
   font-family: "Playfair Display";
-  letter-spacing: 5px;
   font-weight: 400;
   margin: 10px 0;
   font-size: 2.5rem;

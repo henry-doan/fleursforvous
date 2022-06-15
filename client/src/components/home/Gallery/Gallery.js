@@ -13,7 +13,7 @@ import igPost8 from '../../../images/igPosts/igPost8.jpg';
 
 const Gallery = () => (
   <>
-    <MainContainer size='1350px' smsize='2200px' xssize='3500px' id="Gallery" color='White'>
+    <MainContainer size='1350px' smsize='2200px' xssize='3600px' id="Gallery" color='White'>
       <GallHeader>
         <h1>
           Follow Us On Instagram <IGHandlerIcon href="https://www.instagram.com/fleursforvous/" target='_blank' rel='noreferrer'><Instagram /></IGHandlerIcon>

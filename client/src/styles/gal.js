@@ -29,7 +29,7 @@ export const GalPic = styled.img`
 `
 
 export const GallHeader = styled.div`
-  margin-top: 100px;
+  margin-top: 50px;
   margin-bottom: 50px;
   text-align: center;
   padding: 32px;
