@@ -3,11 +3,11 @@ const Terms = () => (
   <>
       <p>Last updated: June 15, 2022</p>
     <h2>Acknowledgment</h2>
-      <p>Please read these terms and conditions carefully before using Our Service.</p>
+      <p>Please read these terms and conditions carefully before using our Service.</p>
       <p>Before using FLEURS for VOUS Services, please read these Terms of Use carefully. These terms includes FLEURS for VOUSPrivate Policies, Terms and key sections. These terms constitute a binding agreement between you and FLEURS for VOUS and its affiliates (“ FLEURS for VOUS ”, “ we ”, “ us ”). “You” and “users” shall mean all customers to FLEURS for VOUS. You accept these Terms each time you access services and facilities. If you do not accept these Terms, you must not use FLEURS for VOUS Services. If you are under 18 years of age, you represent and agree that you possess the legal consent of your parent or guardian to access and use the FLEURS for VOUS service.</p>
       <p>This agreement is a legally binding contract. It may change as our Service changes and you agree you will review it and any updates regularly.</p>
     <h2>Future Revisions to Terms</h2>
-      <p>We reserve the right, at Our sole discretion, to modify or replace these Terms at any time. An updated version will be available upon revision. Please visit this periodically to review the most current version. Your continued use of the FLEURS for VOUS Service after a change to these terms constitutes your binding acceptance of these Terms.</p>
+      <p>We reserve the right, at our sole discretion, to modify or replace these Terms at any time. An updated version will be available upon revision. Please visit this periodically to review the most current version. Your continued use of the FLEURS for VOUS Service after a change to these terms constitutes your binding acceptance of these Terms.</p>
     <h1>FLEURS for VOUS Service</h1>
       <p>“FLEURS for VOUS Service” means the website located at www.fleursforvous.com and any associated applications, software and Services under FLEURS for VOUS’s control, whether partial or otherwise, used in connection with providing the Services provided by FLEURS for VOUS.</p>
     <h2>Interpretation</h2>
