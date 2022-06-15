@@ -89,7 +89,7 @@ export const MainSelect = styled.select`
   }
 
   @media screen and (max-width: 767px) {
-    width: 15rem;
+    width: 16rem;
   }
 `
 
