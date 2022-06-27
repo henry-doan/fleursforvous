@@ -29,14 +29,14 @@ const Gallery = () => (
       </Fade>
       <GallRow>
         <GallCol>
-          <Slide direction='up'>
+          <Slide direction='up' triggerOnce>
             <GalPic 
               loading="lazy" 
               alt="igpost"
               src={igPost3}
             />
           </Slide>
-          <Slide direction='up'>
+          <Slide direction='up' triggerOnce>
             <GalPic 
               loading="lazy" 
               alt="igpost"
@@ -45,14 +45,14 @@ const Gallery = () => (
           </Slide>
         </GallCol>
         <GallCol>
-          <Slide direction='up'>
+          <Slide direction='up' triggerOnce>
             <GalPic 
               loading="lazy" 
               alt="igpost"
               src={igPost2}
             />   
           </Slide>
-          <Slide direction='up'>
+          <Slide direction='up' triggerOnce>
             <GalPic 
               loading="lazy" 
               alt="igpost"
@@ -61,14 +61,14 @@ const Gallery = () => (
           </Slide>
         </GallCol>
         <GallCol>
-          <Slide direction='up'>
+          <Slide direction='up' triggerOnce>
             <GalPic 
               loading="lazy" 
               alt="igpost"
               src={igPost5}
             />
           </Slide>
-          <Slide direction='up'>
+          <Slide direction='up' triggerOnce>
             <GalPic 
               loading="lazy" 
               alt="igpost"
@@ -77,14 +77,14 @@ const Gallery = () => (
           </Slide>
         </GallCol>
         <GallCol>
-          <Slide direction='up'>
+          <Slide direction='up' triggerOnce>
             <GalPic 
               loading="lazy" 
               alt="igpost"
               src={igPost4}
             /> 
           </Slide>
-          <Slide direction='up'>
+          <Slide direction='up' triggerOnce>
             <GalPic 
               loading="lazy" 
               alt="igpost"

@@ -5,6 +5,7 @@ import { MainInput, MainSelect, MainSelectLabel, MainTextarea, MainSelectLabelTx
 import { SubmissionConsumer } from '../../../providers/SubmissionProvider';
 import Policy from '../../policies/Policy';
 import Terms from '../../policies/Terms';
+import { Fade } from 'react-awesome-reveal';
 
 const Inquiries = ({ addSubmission }) => {
   const [contact, setContact] = useState({ fullName: '', occasion: '', phone: '', email: '', dateNeeded: '', timeNeeded: '', colors: '', specialRequirements: '', priceRange: 'Small - $20', flowers: '', complete: false })
@@ -20,10 +21,12 @@ const Inquiries = ({ addSubmission }) => {
   return (
     <MainContainer color='Grey' id='Inquiries' size='950px' mdsize='950px' lgsize='950px' smsize='1400px' xssize='1400px'>
       <Container style={{ color: 'black', fontFamily: "Playfair Display", paddingTop: '100px' }}>
-        <InquiryTitle>Inquiries</InquiryTitle>
-        <p style={{ fontSize: '1.50rem', fontFamily: "Playfair Display", textAlign: 'center' }}>
-          Alicia would love to work with you! Please fill out all of the required information down below. <br /> You should receive a response back within 24 hours.
-        </p>
+        <Fade>
+          <InquiryTitle>Inquiries</InquiryTitle>
+          <p style={{ fontSize: '1.50rem', fontFamily: "Playfair Display", textAlign: 'center' }}>
+            Alicia would love to work with you! Please fill out all of the required information down below. <br /> You should receive a response back within 24 hours.
+          </p>
+        </Fade>
         <Form onSubmit={handleSubmit}>
           <FloatingLabel
             label="Full Name"
