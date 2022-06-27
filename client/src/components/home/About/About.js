@@ -1,6 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { MainContainer, MainProfilePic, TextHeader, TextPara, TextSec } from "../../../styles/shared";
 import Profile from '../../../images/Profile.jpg';
+import { Fade } from "react-reveal";
 
 const About = () => (
   <MainContainer color='White' id='About' size='1200px' lgsize='1600px' mdsize='2150px' smsize='2100px' xssize='2200px'>
@@ -11,9 +12,12 @@ const About = () => (
     <Container>
       <Row>
         <Col lg={12} xl={6} style={{ display: 'flex', justifyContent: 'center', padding: 0 }}>
-          <MainProfilePic src={Profile} alt='profile' />
+          <Fade left>
+            <MainProfilePic src={Profile} alt='profile' />
+          </Fade>
         </Col>
         <Col lg={12} xl={6}>
+          <Fade right>
           <TextSec>
             <TextHeader>About</TextHeader>
           </TextSec>
@@ -26,6 +30,8 @@ const About = () => (
           <TextPara>
             According to Alicia, there is something truly unique, special, and fulfilling working with flowers. She realizes this is not considered just another hobby to pass the time, but actually, it is her long-awaited passion that she has been yearning for. 
           </TextPara>
+            
+          </Fade>
         </Col>
       </Row>
     </Container>
