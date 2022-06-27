@@ -1,6 +1,6 @@
 import { MainBGContainer } from "../../../styles/shared";
 import { Container, Col, Row } from "react-bootstrap";
-import { Fade } from "react-reveal";
+import { Fade } from "react-awesome-reveal";
 
 const Services = () => (
   <MainBGContainer id='Services' color='Black' smsize='900px' xssize='900px' image='https://images.unsplash.com/photo-1603843904225-ce7c6c8c6f31?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80'>
@@ -8,7 +8,7 @@ const Services = () => (
       <br />
       <br />
       <br />
-      <Fade bottom>
+      <Fade direction='bottom'>
         <h1 style={{ fontFamily: "Playfair Display" }}>
           Services
         </h1>

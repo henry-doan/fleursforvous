@@ -1,7 +1,7 @@
 import { HeaderImg, MainContainer } from "../../../styles/shared";
 import { Parallax } from "react-parallax";
 import Logo from '../../../images/logo.jpg';
-import Fade from 'react-reveal/Fade';
+import { Fade } from 'react-awesome-reveal';
 
 const Header = () => (
   <MainContainer id="Header" color='White' size='950px' smsize='100vh' xssize='970px'>
@@ -11,7 +11,7 @@ const Header = () => (
       strength={500}
     >
       <div style={{ height: '100vh', textAlign: 'center' }}>
-        <Fade top>
+        <Fade direction='top'>
           <HeaderImg src={Logo} alt='logo' />
         </Fade>
       </div>

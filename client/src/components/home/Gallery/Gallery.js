@@ -10,7 +10,7 @@ import igPost5 from '../../../images/igPosts/igPost5.jpg';
 import igPost6 from '../../../images/igPosts/igPost6.jpg';
 import igPost7 from '../../../images/igPosts/igPost7.jpg';
 import igPost8 from '../../../images/igPosts/igPost8.jpg';
-import { Slide, Fade } from 'react-reveal';
+import { Slide, Fade } from 'react-awesome-reveal';
 
 const Gallery = () => (
   <>
@@ -29,14 +29,14 @@ const Gallery = () => (
       </Fade>
       <GallRow>
         <GallCol>
-          <Slide bottom>
+          <Slide direction='up'>
             <GalPic 
               loading="lazy" 
               alt="igpost"
               src={igPost3}
             />
           </Slide>
-          <Slide bottom>
+          <Slide direction='up'>
             <GalPic 
               loading="lazy" 
               alt="igpost"
@@ -45,14 +45,14 @@ const Gallery = () => (
           </Slide>
         </GallCol>
         <GallCol>
-          <Slide bottom>
+          <Slide direction='up'>
             <GalPic 
               loading="lazy" 
               alt="igpost"
               src={igPost2}
             />   
           </Slide>
-          <Slide bottom>
+          <Slide direction='up'>
             <GalPic 
               loading="lazy" 
               alt="igpost"
@@ -61,14 +61,14 @@ const Gallery = () => (
           </Slide>
         </GallCol>
         <GallCol>
-          <Slide bottom>
+          <Slide direction='up'>
             <GalPic 
               loading="lazy" 
               alt="igpost"
               src={igPost5}
             />
           </Slide>
-          <Slide bottom>
+          <Slide direction='up'>
             <GalPic 
               loading="lazy" 
               alt="igpost"
@@ -77,14 +77,14 @@ const Gallery = () => (
           </Slide>
         </GallCol>
         <GallCol>
-          <Slide bottom>
+          <Slide direction='up'>
             <GalPic 
               loading="lazy" 
               alt="igpost"
               src={igPost4}
             /> 
           </Slide>
-          <Slide bottom>
+          <Slide direction='up'>
             <GalPic 
               loading="lazy" 
               alt="igpost"
